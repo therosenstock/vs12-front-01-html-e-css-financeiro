@@ -1,0 +1,131 @@
+@media screen and (min-width: 452px) {
+    .big-hero h1 {
+        font-size: 3rem;
+    }
+
+    .big-hero p {
+        max-width: 40.2rem;
+    }
+
+    .big-hero .btn-open-account {
+        font-size: 1rem;
+        padding: 1rem 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .choose-container .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .choose-container .card p {
+        font-size: 1rem;
+    }
+
+    .subscribe-container {
+        max-width: 23.2rem;
+    }
+}
+
+@media screen and (min-width: 572px) {
+    .choose-innov {
+        background-color: #fff;
+    }
+
+    .choose-innov h2 {
+        color: #000;
+    }
+
+    .choose-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .choose-container .card {
+        max-width: 20rem;
+    }
+
+    .choose-container .card:nth-child(odd) {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .subscribe-container h2 {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu .hamburger {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.125rem;
+    }
+
+    .menu ul li {
+        font-weight: 700;
+        cursor: pointer;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .menu ul li:hover {
+        opacity: 0.9;
+    }
+
+    .btn-open-account-nav {
+        all: unset;
+        background-color: #AD1919;
+        color: #FFF;
+        border-radius: 0.625rem;
+        padding: 1rem;
+    }
+
+    .big-hero {
+        height: 90vh;
+    }
+
+    .know-innov {
+        position: relative;
+        justify-content: flex-start;
+        padding: 3rem;
+    }
+
+    .know-innov .image-content {
+        position: absolute;
+        top: 0;
+        right: 6.25rem;
+    }
+
+    .know-innov .content-text {
+        margin: 3rem 0;
+        max-width: 22rem;
+    }
+}
+
+@media screen and (min-width: 1040px) {
+    .big-hero h1 {
+        font-size: 3.75rem;
+    }
+
+    .big-hero p {
+        font-size: 1.375rem;
+    }
+
+    .choose-innov h2 {
+        font-size: 1.75rem;
+    }
+
+    .know-innov {
+        padding: 3rem 18rem;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .know-innov .image-content {
+        left: 48rem;
+    }
+}
