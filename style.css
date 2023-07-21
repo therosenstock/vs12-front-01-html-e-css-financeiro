@@ -83,15 +83,58 @@ nav .logo{
     z-index: 0;
 }
 .choose-innov{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #E90000;
+}
+.choose-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
 }
 
-/* .big-hero img{
-    width: 100vw;
-    max-width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-} */
+.choose-container h2{
+    background-color: #E90000;
+    color: #fff;
+    padding: 2rem 0 0 3rem;;
+    font-size: 1.5rem; 
+    font-weight: 700; 
+}
+
+.choose-container .card:nth-child(2n){
+    background-color: #E90000;
+    color: #fff;
+}
+.choose-container .card{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    padding-top: 1rem;
+    background-color: #fff;
+    gap: 1rem;
+
+}
+.choose-container .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.choose-container .card h3{
+    font-size:1.5rem;
+}
+.choose-container .card p{
+    font-size: 1rem;;
+}
+.know-innov{
+    background-color: #E90000;
+    color: #fff;
+}
+
+
 img{
     max-width: 100%;
 }
