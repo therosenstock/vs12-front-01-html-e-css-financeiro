@@ -128,4 +128,27 @@
     .know-innov .image-content {
         left: 48rem;
     }
+    .image-content img{
+        animation: go-back 1s ease-in-out;
+        animation-delay: 1s;
+    }
+    .card{
+        animation: go-up 1s ease-in-out;
+    }
+    @keyframes go-up {
+        from {
+          transform: translateY(100px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      } 
+    @keyframes go-back {
+      from {
+        transform: translateX(200px);
+      }
+      to {
+        transform: translateX(0);
+      }
+    } 
 }
