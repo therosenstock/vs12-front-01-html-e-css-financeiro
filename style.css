@@ -132,19 +132,100 @@ nav .logo{
 .know-innov{
     background-color: #E90000;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
 }
-
+.know-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1rem;
+}
+.know-container h2{
+    font-size: 2.25rem;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.know-container h2 strong{
+    font-weight: 900;
+}
+.know-content p{
+    font-size: 1.25rem;
+    margin-top: -2rem; 
+}
+.subscribe-innov{
+    background: url('assets/form-300.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.subscribe-container{
+    height: 35vh;
+    width: 80vw;
+    border-radius: 0.625rem;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    padding: 2rem;
+}
+.subscribe-container h2{
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 500; 
+}
+.subscribe-container form{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+.subscribe-container form input{
+    all: unset;
+    width: 100%;
+    border-bottom: #000 2px solid;
+    padding-bottom: 0.5rem;
+}
+.subscribe-container form input:focus{
+    border-bottom: #E90000 2px solid;
+}
+.btn-continue{
+    width: 100%;
+    text-align: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    height: 10vh;
+    font-weight: 700;
+}
 
 img{
     max-width: 100%;
 }
 
-.btn {
+.btn{
     border-radius: 10px;
     padding: 8px 16px;
-    background-color: red;
+    background-color: #E90000;
     border: none;
     color: white;
     font-weight: 700;
     font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: ease-in-out;
+}
+.btn:hover{
+    background-color: #b10202;
 }
