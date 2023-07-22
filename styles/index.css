@@ -54,7 +54,7 @@ nav .logo {
 
 .big-hero {
     position: relative;
-    background: url('assets/main.png') no-repeat;
+    background: url('../assets/main.png') no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -184,7 +184,7 @@ nav .logo {
 }
 
 .subscribe-innov {
-    background: url('assets/form-main.png') no-repeat;
+    background: url('../assets/form-main.png') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
