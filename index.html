@@ -7,6 +7,8 @@
   <link rel="icon" type="image/x-icon" href="./assets/logo.svg">
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="stylesheet" href="./styles/index-media.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>InnovBank</title>
 </head>
 
@@ -43,22 +45,22 @@
   <section class="choose-innov">
     <h2>Por que escolher a <strong>Innov</strong>Bank?</h2>
     <div class="choose-container">
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <img src="./assets/img-300-01.png" alt="">
         <h3>Experiência digital incompáravel</h3>
         <p>Simplifique sua vida financeira. Faça transações e gerencie contas com alguns toques no seu dispositivo.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <img src="./assets/img-300-02.png" alt="">
         <h3>Segurança em primeiro lugar</h3>
         <p>Proteção garantida. Suas informações estão sempre seguras, permitindo que você se concentre no que importa.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <img src="./assets/img-300-03.png" alt="">
         <h3>Soluções personalizadas</h3>
         <p>Atendimento exclusivo. Nossa equipe o ajuda a encontrar as melhores soluções financeiras para suas metas.</p>
       </div>
-      <div class="card">
+      <div class="card" data-aos="fade-up">
         <img src="./assets/img-300-04.png" alt="">
         <h3>Compromisso com a inovação</h3>
         <p>Sempre na frente. Novas tecnologias e serviços para acompanhar o mundo financeiro em evolução.</p>
@@ -70,7 +72,7 @@
       <h2><strong>Conheça o Innov</strong>Card</h2>
       <div class="know-content">
         <div class="image-content">
-          <img src="./assets/inovcard-300.png" alt="" srcset="">
+          <img src="./assets/inovcard-300.png" alt="" srcset="" data-aos="fade-left" data-aos-duration="2000">
         </div>
         <div class="content-text">
           <p>Com o cartão InnovBank, você tem o controle total das suas finanças na palma da sua mão. </p>
@@ -79,7 +81,7 @@
   </div>
   </section>
   <section class="subscribe-innov">
-    <div class="subscribe-container">
+    <div class="subscribe-container" data-aos="fade-up">
       <h2>Peça sua conta e cartão de crédito do InnovBank</h2>
       <form>
         <input type="text" placeholder="Digite seu CPF">
@@ -91,6 +93,10 @@
   <footer>
       <span>InnovBank &copy; 2023.</span>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

@@ -128,7 +128,7 @@
     .know-innov .image-content {
         left: 48rem;
     }
-    .image-content img{
+    /*.image-content img{
         animation: go-back 1s ease-in-out;
         animation-delay: 1s;
     }
@@ -150,5 +150,5 @@
       to {
         transform: translateX(0);
       }
-    } 
+    } */
 }
