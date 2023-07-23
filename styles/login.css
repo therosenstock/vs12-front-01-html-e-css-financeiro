@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    max-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    background-color: #E90000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+}
+
+a,
+button {
+    all: unset
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2.1rem;
+    background-image: url('../assets/login-img.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.main-img {
+    display: none;
+}
+
+.login-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem 1.25rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.login-card h1 {
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 2.25rem;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card input {
+    all: unset;
+    max-width: 100%;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.56rem;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.login-card input[type="password"] {
+    margin: 2.25rem 0 2.8rem 0;
+}
+
+.login-card input::placeholder {
+    color: transparent;
+}
+
+.label-float {
+    position: relative;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    color: #575555;
+}
+
+.cpf-label {
+    top: 0;
+    left: 0;
+}
+
+.password-label {
+    top: 2.2rem;
+    left: 0;
+}
+
+.label-float input:focus:required:invalid {
+    border-bottom: 1px solid #E90000;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 0.8125rem;
+    margin-top: -1.1rem;
+}
+
+.login-card button {
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 0.625rem;
+    background: #E90000;
+    color: #FFF;
+    text-align: center;
+    padding: 0.44rem 0;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    background-color: #E90000;
+    color: #fff;
+    padding: 0.625rem 0;
+    font-size: 0.875rem;
+}
+
+.footer button,
+.footer a {
+    width: 50%;
+    text-align: center;
+    height: 3.125rem;
+    cursor: pointer;
+}
+
+.footer button {
+    border-right: 1px solid #fff;
+}
+
+.not-client-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,65 @@
+@media screen and (min-width: 1040px) {
+    .logo {
+        transition: opacity 0.3s ease-in;
+    }
+
+    .logo:hover {
+        opacity: 0.8;
+    }
+
+    .main {
+        background-image: none;
+        padding: 0;
+    }
+
+    .main-img {
+        background-image: url('../assets/login-img-desktop.png');
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: 100%;
+        width: 50vw;
+    }
+
+    .login-card {
+        background: none;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0 4.375rem 0;
+    }
+
+    .login-card h1 {
+        font-size: 1.8rem;
+        margin-bottom: 3.3rem;
+    }
+
+    .login-card input {
+        font-size: 1.3rem;
+    }
+
+    .login-card button,
+    .footer button,
+    .footer a {
+        font-size: 1.2rem;
+        transition: opacity 0.3s ease-in;
+    }
+
+    .login-card button:hover,
+    .footer button:hover,
+    .footer a:hover {
+        opacity: 0.8;
+    }
+
+    .label-float label {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
