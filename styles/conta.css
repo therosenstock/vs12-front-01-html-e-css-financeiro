@@ -71,20 +71,74 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  
 }
 .title-option{
   font-size: 0.625rem;
   font-weight: 700;
-  padding: 0.5rem 0;
-  
+  padding-top: 0.5rem;
+}
+.statement-container{
+  margin: 1rem;
+  margin-top: 0;
+}
+h1{
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.transaction{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #D9D9D9;
+}
+.content-aside{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.transaction-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transaction-icon i{
+  color: #fff;
+}
+.transaction-title{
+  font-size: 0.975rem;
+  font-weight: 700;
+}
+.transation-value{
+}
+.value-title{
+  font-size: 0.9375rem;
+  font-weight: 600;
 }
 
+/* GENERAL */
 .title{
-  font-size: 0.875rem;
+  font-size: 0.975rem;
   font-weight: 400;
 }
 .value{
   font-size: 1.5rem;
   font-weight: 700;
+}
+.notice{
+  font-size: 0.725rem;
+  margin: 0;
+  padding: 0;
+}
+.red{
+  color: #BF0000;
+}
+.green{
+  color: #107100;
 }
