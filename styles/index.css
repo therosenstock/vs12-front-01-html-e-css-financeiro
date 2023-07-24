@@ -281,10 +281,6 @@ img {
 .button:hover {
     background-color: #b10202;
 }
-a{
-    all: unset;
-}
-
 
 .offcanvas {
     background-color: #E90000;
