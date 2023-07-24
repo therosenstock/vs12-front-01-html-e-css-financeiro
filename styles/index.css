@@ -265,3 +265,6 @@ img {
 .btn:hover {
     background-color: #b10202;
 }
+a{
+    all: unset;
+}

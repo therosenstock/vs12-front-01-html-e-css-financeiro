@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/conta.css">
+  <link rel="stylesheet" href="../styles/conta-media.css">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <title>Conta | InnovBank</title>
 </head>
@@ -24,9 +25,9 @@
       <div class="links-wrapper">
         <span><strong>Agência:</strong> 001</span>
         <span><strong>Conta:</strong> 88796-7</span>
-        <a href="#characters-section" class="btn btn-outline-danger"><i class="ph-fill ph-sign-out"></i>Perfil</a>
-        <a href="#characters-section" class="btn btn-outline-danger">Configurações</a>
-        <a href="#characters-section" class="btn btn-outline-danger">Sair</a>
+        <a href="#" class="btn btn-outline-danger"><i class="ph-fill ph-sign-out"></i>Perfil</a>
+        <a href="#" class="btn btn-outline-danger">Configurações</a>
+        <a href="../index.html" class="btn btn-outline-danger">Sair</a>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile"
@@ -54,7 +55,7 @@
               <a href="" class="btn btn-outline-danger">Configurações</a>
             </li>
             <li class="nav-item">
-              <a href="" class="btn btn-outline-danger">Sair</a>
+              <a href="../index.html" class="btn btn-outline-danger">Sair</a>
             </li>
           </ul>
         </div>
@@ -140,6 +141,10 @@
         <div class="transation-value">
           <h2 class="value-title red">
             - R$ 50,00
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#001">
+              <i class="ph-fill ph-eye"></i>
+            </button>
           </h2>
         </div>
       </div>
@@ -158,6 +163,9 @@
         <div class="transation-value">
           <h2 class="value-title green">
             + R$ 15.000,00
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#002">
+              <i class="ph-fill ph-eye"></i>
+            </button>
           </h2>
         </div>
       </div>
@@ -176,6 +184,9 @@
         <div class="transation-value">
           <h2 class="value-title red">
             - R$ 150,00
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#003">
+              <i class="ph-fill ph-eye"></i>
+            </button>
           </h2>
         </div>
       </div>
@@ -194,6 +205,9 @@
         <div class="transation-value">
           <h2 class="value-title red">
             - R$ 300,00
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#004">
+              <i class="ph-fill ph-eye"></i>
+            </button>
           </h2>
         </div>
       </div>
@@ -301,10 +315,83 @@
         </div>
     </section>
   </main>
-</body>
+
+
+<!-- MODALS-->
+<div class="modal fade" id="001" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Transferência enviada via TED realizada em 24/07/2023 às 08:40, para Rafael Ramos.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="002" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Salário recebido via DOC em 24/07/2023 às 14:00, enviado por DBC Company.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Saque realizado em 24/07/2023 às 12:59 em ATM Caldeira.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="004" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Pix realizado em 24/07/2023 às 08:40, para Neta Jung.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

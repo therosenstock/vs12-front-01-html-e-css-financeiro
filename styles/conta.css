@@ -119,11 +119,13 @@ h1{
   font-size: 0.975rem;
   font-weight: 700;
 }
-.transation-value{
-}
+
 .value-title{
   font-size: 0.9375rem;
   font-weight: 600;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
 }
 .creditcard-container{
   margin: 1rem;
@@ -131,8 +133,7 @@ h1{
 .creditcard-invoice{
   margin: 1rem 0;
 }
-.infographic-bar{
-}
+
 .infographic-caption{
   display: flex;
   justify-content: space-between;
@@ -177,4 +178,12 @@ h1{
 }
 .cc{
   padding: 0.5rem 0;
+}
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+  border-color: #E90000;
+  background-color: #E90000;
+}
+.btn-primary:hover{
+  background-color: #BF0000;
+  border-color: #BF0000;
 }
