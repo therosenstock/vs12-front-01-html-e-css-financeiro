@@ -10,10 +10,13 @@
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     max-width: 100%;
     font-size: 1rem;
-
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav {
@@ -28,10 +31,12 @@ nav {
 }
 
 nav .logo {
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 
 .logo span strong {
@@ -39,12 +44,17 @@ nav .logo {
 }
 
 .menu .hamburger {
+    all: unset;
     cursor: pointer;
     transition: opacity 0.3s ease-in;
 }
 
 .menu .hamburger:hover {
     opacity: 0.8;
+}
+
+.menu .hamburger:focus {
+    outline: #E90000;
 }
 
 .menu ul {
@@ -87,6 +97,10 @@ nav .logo {
     font-size: 1.25rem;
     z-index: 1;
     line-height: 2.25rem;
+}
+
+.btn-open-account {
+    all: unset;
 }
 
 .big-hero .btn-open-account {
@@ -135,6 +149,7 @@ nav .logo {
     padding: 3rem;
     padding-top: 1rem;
     background-color: #fff;
+    border: none;
     gap: 1rem;
 }
 
@@ -146,6 +161,7 @@ nav .logo {
 
 .choose-container .card h3 {
     font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .choose-container .card p {
@@ -249,7 +265,7 @@ img {
     max-width: 100%;
 }
 
-.btn {
+.button {
     border-radius: 10px;
     padding: 8px 16px;
     background-color: #E90000;
@@ -262,6 +278,33 @@ img {
     animation: ease-in-out;
 }
 
-.btn:hover {
+.button:hover {
     background-color: #b10202;
+}
+
+.offcanvas {
+    background-color: #E90000;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.offcanvas-body button,
+.offcanvas-body a {
+    all: unset;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.offcanvas-body a {
+    border-radius: 0.625rem;
+    background: #AD1919;
+    padding: 1rem 2rem;
 }

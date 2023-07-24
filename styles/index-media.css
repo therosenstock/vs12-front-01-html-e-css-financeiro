@@ -55,15 +55,24 @@
 }
 
 @media screen and (min-width: 768px) {
+    nav .logo {
+        cursor: pointer;
+        transition: opacity 0.3s ease-in;
+    }
+
+    nav .logo:hover {
+        opacity: 0.8;
+    }
+    
     .menu .hamburger {
         display: none;
     }
 
     .menu ul {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         gap: 3.125rem;
+        margin: 0;
     }
 
     .menu ul li {
@@ -78,10 +87,11 @@
 
     .btn-open-account-nav {
         all: unset;
+        display: block;
         background-color: #AD1919;
         color: #FFF;
         border-radius: 0.625rem;
-        padding: 1rem;
+        padding: 1rem 2rem;
     }
 
     .big-hero {
@@ -128,27 +138,14 @@
     .know-innov .image-content {
         left: 48rem;
     }
-    /*.image-content img{
-        animation: go-back 1s ease-in-out;
-        animation-delay: 1s;
+}
+
+@media screen and (min-width: 1600px) {
+    .know-innov {
+        padding: 3rem 22.5rem;
     }
-    .card{
-        animation: go-up 1s ease-in-out;
+
+    .know-innov .image-content {
+        left: 52.5rem;
     }
-    @keyframes go-up {
-        from {
-          transform: translateY(100px);
-        }
-        to {
-          transform: translateY(0);
-        }
-      } 
-    @keyframes go-back {
-      from {
-        transform: translateX(200px);
-      }
-      to {
-        transform: translateX(0);
-      }
-    } */
 }
