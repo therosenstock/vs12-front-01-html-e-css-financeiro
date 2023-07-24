@@ -33,7 +33,6 @@
 }
 .account-data{
   display: flex;
-  gap: 1rem;
 }
 .btn-close{
   color: #fff !important;
@@ -68,15 +67,13 @@
 
 .account-menu{
   display: flex;
-  justify-content: space-around;
   padding: 1rem;
+  max-width: 100%;
 }
 .account-option{
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
 .option-icon{
   background-color: #BF0000;
