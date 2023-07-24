@@ -1,0 +1,90 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    max-width: 100%;
+}
+.navbar{
+  padding: 1rem;
+}
+
+.navbar-dark{
+  background: #E90000; 
+  color: #fff;
+}
+
+.navbar-logo{
+  display: flex;
+  gap: 0.5rem;
+}
+
+.links-wrapper{
+  display: none;
+}
+
+.offcanvas-header{ 
+  background-color: #E90000;
+  color: #fff;
+}
+.offcanvas-body{
+  gap: 0.5rem;
+}
+.offcanvas-body li{
+  padding-bottom: 0.5rem;
+}
+
+.balance-container{
+  background-color: #E90000;
+  color: #fff;
+}
+.balance-info{
+  border-bottom: 2px solid #fff;
+  padding: 0 1rem;
+}
+.balance-notice{
+  padding: 1rem;
+  padding-bottom: 1.5rem;
+}
+.account-menu{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+
+}
+.account-option{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  
+}
+.option-icon{
+  background-color: #BF0000;
+  padding: 0.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+}
+.title-option{
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+  
+}
+
+.title{
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.value{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
