@@ -18,7 +18,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 
-  .custom-nav .links-wrapper {
+  .links-wrapper {
     display: none;
   }
   .account-menu{
@@ -32,7 +32,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 
-  .custom-nav .links-wrapper {
+  .links-wrapper {
     display: none;
   }
   .account-menu{
@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
   }
 
-  .custom-nav .links-wrapper {
+  .links-wrapper {
     display: none;
   }
 .account-menu{
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
 
-  .custom-nav .links-wrapper {
+  .links-wrapper {
     display: flex;
   }
 

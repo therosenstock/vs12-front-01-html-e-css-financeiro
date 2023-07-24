@@ -23,7 +23,6 @@
 }
 
 .links-wrapper{
-  display: none;
   justify-content: space-between;
   align-items: center;
 }
@@ -33,6 +32,12 @@
 }
 .account-data{
   display: flex;
+  gap: 1rem;
+}
+.account-menu{
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 .btn-close{
   color: #fff !important;
