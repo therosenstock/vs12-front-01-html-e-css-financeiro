@@ -69,7 +69,6 @@ body::-webkit-scrollbar-thumb {
   .account-menu{
     justify-content: flex-start;
     gap: 2rem;
-    background-color: blue;
   }
 
   .content {
