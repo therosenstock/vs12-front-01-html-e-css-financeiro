@@ -10,7 +10,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-@media screen and (max-width: 360px) {
+.content {
+  display: grid;
+}
+
+@media screen and (max-width: 300px) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .custom-nav .links-wrapper {
+    display: none;
+  }
+}
+.account-menu{
+  overflow-x: auto;
+}
+@media screen and (max-width: 560px) {
   .navbar-toggler {
     display: block;
   }
@@ -20,7 +36,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1048px) {
   .navbar-toggler {
     display: block;
   }
@@ -29,13 +45,27 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
 }
+.account-menu{
+  justify-content: flex-start;
+  gap: 2rem;
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1049px) {
   .navbar-toggler {
     display: none;
   }
 
   .custom-nav .links-wrapper {
-    display: block;
+    display: flex;
+  }
+
+  .account-menu{
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+
+  .content {
+    /*grid-template-columns: 1fr 1fr;*/
   }
 }
+

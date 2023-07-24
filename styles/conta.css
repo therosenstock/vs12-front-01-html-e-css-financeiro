@@ -9,6 +9,7 @@
 }
 .navbar{
   padding: 1rem;
+  max-width: 100%;
 }
 
 .navbar-dark{
@@ -23,8 +24,20 @@
 
 .links-wrapper{
   display: none;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.links-wrapper .account-menu .btn-outline-danger{
+  color: #fff;
+  border: none;
+}
+.account-data{
+  display: flex;
+  gap: 1rem;
+}
+.btn-close{
+  color: #fff !important;
+}
 .offcanvas-header{ 
   background-color: #E90000;
   color: #fff;

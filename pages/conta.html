@@ -23,11 +23,15 @@
       </div>
 
       <div class="links-wrapper">
-        <span><strong>Agência:</strong> 001</span>
-        <span><strong>Conta:</strong> 88796-7</span>
-        <a href="#" class="btn btn-outline-danger"><i class="ph-fill ph-sign-out"></i>Perfil</a>
-        <a href="#" class="btn btn-outline-danger">Configurações</a>
-        <a href="../index.html" class="btn btn-outline-danger">Sair</a>
+        <div class="account-data">
+          <span><strong>Agência:</strong> 001</span>
+          <span><strong>Conta:</strong> 88796-7</span>
+        </div>
+        <div class="account-menu">
+          <a href="#" class="btn btn-outline-danger"></i>Perfil</a>
+          <a href="#" class="btn btn-outline-danger">Configurações</a>
+          <a href="../index.html" class="btn btn-outline-danger">Sair</a>
+        </div>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu-mobile"
@@ -121,276 +125,283 @@
     </div>
   </header>
   <main>
-    <section class="statement-container">
-      <h1>Extrato</h1>
-      <span class="notice">
-        Hoje
-      </span>
-      <div class="transaction">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <img src="../assets/ico-01.svg" alt="" srcset="">
-          </div>
-          <div class="transaction-info">
-            <span class="notice">Transferência</span>
-            <h2 class="transaction-title">
-              Rafael Ramos
-            </h2>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            - R$ 50,00
-            
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#001">
-              <i class="ph-fill ph-eye"></i>
-            </button>
-          </h2>
-        </div>
-      </div>
-      <div class="transaction">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <i class="ph-fill ph-hand-coins"></i>
-          </div>
-          <div class="transaction-info">
-            <span class="notice">Salário</span>
-            <h2 class="transaction-title">
-              DBC Company
-            </h2>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title green">
-            + R$ 15.000,00
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#002">
-              <i class="ph-fill ph-eye"></i>
-            </button>
-          </h2>
-        </div>
-      </div>
-      <div class="transaction">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <i class="ph-fill ph-money"></i>
-          </div>
-          <div class="transaction-info">
-            <span class="notice">Saque</span>
-            <h2 class="transaction-title">
-              ATM Caldeira
-            </h2>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            - R$ 150,00
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#003">
-              <i class="ph-fill ph-eye"></i>
-            </button>
-          </h2>
-        </div>
-      </div>
-      <div class="transaction">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <img src="../assets/ico-03.svg" alt="" srcset="">
-          </div>
-          <div class="transaction-info">
-            <span class="notice">Pix</span>
-            <h2 class="transaction-title">
-              Neta Jung
-            </h2>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            - R$ 300,00
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#004">
-              <i class="ph-fill ph-eye"></i>
-            </button>
-          </h2>
-        </div>
-      </div>
-    </section>
-    <section class="creditcard-container">
-      <h1>Cartão de crédito</h1>
-      <div class="creditcard-invoice">
-        <h2 class="title title-invoice">Fatura atual</h2>
-        <h1 class="value value-invoice">R$ 1.989,00</h1>
-      </div>
-      <div class="creditcard-infographic">
-        <div class="infographic-caption">
-          <span class="notice">Limite utilizado</span>
-          <span class="notice">Limite disponível</span>
-        </div>
-        <div class="infographic-bar">
-          <div class="bar-full">
-            <div class="bar-progress">
+
+    <div class="content">
+      <section class="statement-container">
+        <h1>Extrato</h1>
+        <span class="notice">
+          Hoje
+        </span>
+        <div class="transaction">
+          <div class="content-aside">
+            <div class="transaction-icon">
+              <img src="../assets/ico-01.svg" alt="" srcset="">
+            </div>
+            <div class="transaction-info">
+              <span class="notice">Transferência</span>
+              <h2 class="transaction-title">
+                Rafael Ramos
+              </h2>
             </div>
           </div>
+          <div class="transation-value">
+            <h2 class="value-title red">
+              - R$ 50,00
+
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#001">
+                <i class="ph-fill ph-eye"></i>
+              </button>
+            </h2>
+          </div>
+        </div>
+        <div class="transaction">
+          <div class="content-aside">
+            <div class="transaction-icon">
+              <i class="ph-fill ph-hand-coins"></i>
+            </div>
+            <div class="transaction-info">
+              <span class="notice">Salário</span>
+              <h2 class="transaction-title">
+                DBC Company
+              </h2>
+            </div>
+          </div>
+          <div class="transation-value">
+            <h2 class="value-title green">
+              + R$ 15.000,00
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#002">
+                <i class="ph-fill ph-eye"></i>
+              </button>
+            </h2>
+          </div>
+        </div>
+        <div class="transaction">
+          <div class="content-aside">
+            <div class="transaction-icon">
+              <i class="ph-fill ph-money"></i>
+            </div>
+            <div class="transaction-info">
+              <span class="notice">Saque</span>
+              <h2 class="transaction-title">
+                ATM Caldeira
+              </h2>
+            </div>
+          </div>
+          <div class="transation-value">
+            <h2 class="value-title red">
+              - R$ 150,00
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#003">
+                <i class="ph-fill ph-eye"></i>
+              </button>
+            </h2>
+          </div>
+        </div>
+        <div class="transaction">
+          <div class="content-aside">
+            <div class="transaction-icon">
+              <img src="../assets/ico-03.svg" alt="" srcset="">
+            </div>
+            <div class="transaction-info">
+              <span class="notice">Pix</span>
+              <h2 class="transaction-title">
+                Neta Jung
+              </h2>
+            </div>
+          </div>
+          <div class="transation-value">
+            <h2 class="value-title red">
+              - R$ 300,00
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#004">
+                <i class="ph-fill ph-eye"></i>
+              </button>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="creditcard-container">
+        <h1>Cartão de crédito</h1>
+        <div class="creditcard-invoice">
+          <h2 class="title title-invoice">Fatura atual</h2>
+          <h1 class="value value-invoice">R$ 1.989,00</h1>
+        </div>
+        <div class="creditcard-infographic">
           <div class="infographic-caption">
-            <span class="notice">R$ 9.576,80</span>
-            <span class="notice">R$ 3.423,20</span>
+            <span class="notice">Limite utilizado</span>
+            <span class="notice">Limite disponível</span>
+          </div>
+          <div class="infographic-bar">
+            <div class="bar-full">
+              <div class="bar-progress">
+              </div>
+            </div>
+            <div class="infographic-caption">
+              <span class="notice">R$ 9.576,80</span>
+              <span class="notice">R$ 3.423,20</span>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="statement-container">
-      <span class="notice">
-        21 de julho de 2023
-      </span>
-      <div class="transaction cc">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <i class="ph-fill ph-popcorn"></i>
+
+        <!-- <section class="statement-container"> -->
+          <span class="notice">
+            21 de julho de 2023
+          </span>
+          <div class="transaction cc">
+            <div class="content-aside">
+              <div class="transaction-icon">
+                <i class="ph-fill ph-popcorn"></i>
+              </div>
+              <div class="transaction-info">
+                <h2 class="transaction-title credit">
+                  Cinemark
+                </h2>
+                <span class="notice">20:30</span>
+              </div>
+            </div>
+            <div class="transation-value">
+              <h2 class="value-title red">
+                R$ 120,89
+              </h2>
+            </div>
           </div>
-          <div class="transaction-info">
-            <h2 class="transaction-title credit">
-              Cinemark
-            </h2>
-            <span class="notice">20:30</span>
+          <div class="transaction cc">
+            <div class="content-aside">
+              <div class="transaction-icon">
+                <i class="ph-fill ph-coffee"></i>
+              </div>
+              <div class="transaction-info ">
+                <h2 class="transaction-title credit">
+                  Padaria
+                </h2>
+                <span class="notice">09:50</span>
+              </div>
+            </div>
+            <div class="transation-value">
+              <h2 class="value-title red">
+                R$ 20,00
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            R$ 120,89
-          </h2>
-        </div>
-      </div>
-      <div class="transaction cc">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <i class="ph-fill ph-coffee"></i>
+          <span class="notice">
+            18 de julho de 2023
+          </span>
+          <div class="transaction cc">
+            <div class="content-aside">
+              <div class="transaction-icon ">
+                <i class="ph-fill ph-paw-print"></i>
+              </div>
+              <div class="transaction-info">
+                <h2 class="transaction-title credit">
+                  Petshop
+                </h2>
+                <span class="notice">13:30</span>
+              </div>
+            </div>
+            <div class="transation-value">
+              <h2 class="value-title red">
+                R$ 250,00
+              </h2>
+            </div>
           </div>
-          <div class="transaction-info ">
-            <h2 class="transaction-title credit">
-              Padaria
-            </h2>
-            <span class="notice">09:50</span>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            R$ 20,00
-          </h2>
-        </div>
-      </div>
-      <span class="notice">
-        18 de julho de 2023
-      </span>
-      <div class="transaction cc">
-        <div class="content-aside">
-          <div class="transaction-icon ">
-            <i class="ph-fill ph-paw-print"></i>
-          </div>
-          <div class="transaction-info">
-            <h2 class="transaction-title credit">
-              Petshop
-            </h2>
-            <span class="notice">13:30</span>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            R$ 250,00
-          </h2>
-        </div>
-      </div>
-      <div class="transaction cc">
-        <div class="content-aside">
-          <div class="transaction-icon">
-            <i class="ph-fill ph-amazon-logo"></i>
-          </div>
-          <div class="transaction-info ">
-            <h2 class="transaction-title credit">
-              Amazon
-            </h2>
-            <span class="notice">19:40</span>
-          </div>
-        </div>
-        <div class="transation-value">
-          <h2 class="value-title red">
-            R$ 599,99
-          </h2>
-        </div>
-    </section>
+          <div class="transaction cc">
+            <div class="content-aside">
+              <div class="transaction-icon">
+                <i class="ph-fill ph-amazon-logo"></i>
+              </div>
+              <div class="transaction-info ">
+                <h2 class="transaction-title credit">
+                  Amazon
+                </h2>
+                <span class="notice">19:40</span>
+              </div>
+            </div>
+            <div class="transation-value">
+              <h2 class="value-title red">
+                R$ 599,99
+              </h2>
+            </div>
+        <!-- </section>   -->
+      </section>
+
+    </div>
+
   </main>
 
 
-<!-- MODALS-->
-<div class="modal fade" id="001" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Transferência enviada via TED realizada em 24/07/2023 às 08:40, para Rafael Ramos.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="002" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Salário recebido via DOC em 24/07/2023 às 14:00, enviado por DBC Company.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <!-- MODALS-->
+  <div class="modal fade" id="001" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Transferência enviada via TED realizada em 24/07/2023 às 08:40, para Rafael Ramos.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="modal fade" id="003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Saque realizado em 24/07/2023 às 12:59 em ATM Caldeira.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="004" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Pix realizado em 24/07/2023 às 08:40, para Neta Jung.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+  <div class="modal fade" id="002" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Salário recebido via DOC em 24/07/2023 às 14:00, enviado por DBC Company.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+  <div class="modal fade" id="003" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Saque realizado em 24/07/2023 às 12:59 em ATM Caldeira.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="004" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Pix realizado em 24/07/2023 às 08:40, para Neta Jung.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
 </body>
 
