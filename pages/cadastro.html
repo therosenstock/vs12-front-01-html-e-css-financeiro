@@ -1,164 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/logo.svg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../styles/cadastro.css" />
-    <link rel="stylesheet" href="../styles/cadastro-media.css" />
-    <title>Cadastro | InnovBank</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="logo" href="../index.html">
-        <img
-          src="../assets/logo.svg"
-          alt="logo do banco innovbank com uma construção branca em um circulo vermelho"
-        />
-        <span><strong>Innov</strong>Bank</span>
-      </a>
-    </header>
-    <main class="main">
-      <div class="main-img"></div>
-      <div class="register-card">
-        <h1>Abra agora sua conta</h1>
-        <form>
-          <div class="label-float">
-            <input
-              type="text"
-              placeholder="Nome"
-              pattern="[A-Za-z\s]+"
-              required
-            />
-            <label class="name-label">Nome</label>
-          </div>
-          <div class="label-float">
-            <input type="text" placeholder="CPF" pattern="[0-9]{11}" required />
-            <label class="cpf-label">CPF</label>
-          </div>
-          <div class="label-float">
-            <input type="email" placeholder="E-mail" required />
-            <label class="email-label">E-mail</label>
-          </div>
-          <div class="label-float">
-            <input type="text" placeholder="Endereço" required />
-            <label class="address-label">Endereço</label>
-          </div>
-          <div class="label-float">
-            <input
-              type="tel"
-              placeholder="Contato"
-              pattern="[0-9]{10,12}"
-              required
-            />
-            <label class="address-label">Contato</label>
-          </div>
-          <div class="label-float">
-            <input type="password" placeholder="Senha" required />
-            <label class="password-label">Senha</label>
-          </div>
-          <div class="label-float">
-            <input
-              type="password"
-              placeholder="Confirmar senha"
-              pattern=".*"
-              required
-            />
-            <label class="confirm-password-label">Confirmar senha</label>
-          </div>
-          <label class="terms-label">
-            <input type="checkbox" name="terms" required />
-            Estou de acordo com a
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Política de Privacidade.
-            </button>
-          </label>
-          <button type="submit" formaction="./conta.html">Abrir conta</button>
-        </form>
-      </div>
-    </main>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Política de Privacidade da InnovBank
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p>
-              Na InnovBank, buscamos proporcionar a melhor experiência possível
-              para garantir que você desfrute ao máximo dos nossos produtos e
-              serviços. E, para isso, a sua privacidade e a segurança dos seus
-              Dados Pessoais são e sempre serão muito importantes para nós.
-            </p>
-            <p>
-              Entendemos que garantir a privacidade vai além do cumprimento da
-              legislação. É respeitar nossos clientes e potenciais clientes, bem
-              como honrar nossos pilares de transparência, parceria, segurança,
-              simplicidade e experiência positiva do usuário.
-            </p>
-            <p>Assim, a Política de Privacidade InnovBank (“Política”) visa:</p>
-            <p>
-              (i) reforçar nosso compromisso com a privacidade e segurança no
-              tratamento das informações coletadas de nossos clientes e outros
-              titulares de dados;
-            </p>
-            <p>
-              (ii) demonstrar, de forma transparente e simples, quais são os
-              dados tratados (conforme definido abaixo) pela InnovBank, a razão
-              e a forma que utilizamos para coletar, armazenar, processar,
-              transferir e consultar os referidos dados;
-            </p>
-            <p>(iii) apresentar como protegemos seus dados;</p>
-            <p>
-              (iv) definir quando e como você pode controlar suas preferências
-              de privacidade, tais como atualizar, solicitar e gerenciar suas
-              informações por meio do nosso aplicativo mobile (“App”).
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Fechar
-            </button>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../assets/logo.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../styles/cadastro.css" />
+  <link rel="stylesheet" href="../styles/cadastro-media.css" />
+  <title>Cadastro | InnovBank</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">
+      <img src="../assets/logo.svg" alt="logo do banco innovbank com uma construção branca em um circulo vermelho" />
+      <span><strong>Innov</strong>Bank</span>
+    </a>
+  </header>
+  <main class="main">
+    <div class="main-img"></div>
+    <div class="register-card">
+      <h1>Abra agora sua conta</h1>
+      <form>
+        <div class="label-float">
+          <input type="text" placeholder="Nome" pattern="[A-Za-z\s]+" required />
+          <label class="name-label">Nome</label>
+        </div>
+        <div class="label-float">
+          <input type="text" placeholder="CPF" pattern="[0-9]{11}" required />
+          <label class="cpf-label">CPF</label>
+        </div>
+        <div class="label-float">
+          <input type="email" placeholder="E-mail" required />
+          <label class="email-label">E-mail</label>
+        </div>
+        <div class="label-float">
+          <input type="text" placeholder="CEP" pattern="[0-9]{8}" id="cep" required />
+          <label class="address-label">CEP</label>
+        </div>
+        <div class="label-float">
+          <input type="text" placeholder="Endereço" id='logradouro' required />
+          <label class="address-label">Endereço</label>
+        </div>
+
+        <div class="label-float">
+          <input type="text" placeholder="Bairro" id="bairro" required />
+          <label class="address-label">Bairro</label>
+        </div>
+        <div class="label-float">
+          <input type="text" placeholder="Estado" id='cidade' required />
+          <label class="address-label">Cidade - UF</label>
+        </div>
+        <div class="label-float">
+          <input type="password" placeholder="Senha" id='senha' required />
+          <label class="password-label">Senha</label>
+        </div>
+        <label class="terms-label">
+          <input type="checkbox" name="terms" required />
+          Estou de acordo com a
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Política de Privacidade.
+          </button>
+        </label>
+        <button type="submit" formaction="./conta.html">Abrir conta</button>
+      </form>
+    </div>
+  </main>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Política de Privacidade da InnovBank
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Na InnovBank, buscamos proporcionar a melhor experiência possível
+            para garantir que você desfrute ao máximo dos nossos produtos e
+            serviços. E, para isso, a sua privacidade e a segurança dos seus
+            Dados Pessoais são e sempre serão muito importantes para nós.
+          </p>
+          <p>
+            Entendemos que garantir a privacidade vai além do cumprimento da
+            legislação. É respeitar nossos clientes e potenciais clientes, bem
+            como honrar nossos pilares de transparência, parceria, segurança,
+            simplicidade e experiência positiva do usuário.
+          </p>
+          <p>Assim, a Política de Privacidade InnovBank (“Política”) visa:</p>
+          <p>
+            (i) reforçar nosso compromisso com a privacidade e segurança no
+            tratamento das informações coletadas de nossos clientes e outros
+            titulares de dados;
+          </p>
+          <p>
+            (ii) demonstrar, de forma transparente e simples, quais são os
+            dados tratados (conforme definido abaixo) pela InnovBank, a razão
+            e a forma que utilizamos para coletar, armazenar, processar,
+            transferir e consultar os referidos dados;
+          </p>
+          <p>(iii) apresentar como protegemos seus dados;</p>
+          <p>
+            (iv) definir quando e como você pode controlar suas preferências
+            de privacidade, tais como atualizar, solicitar e gerenciar suas
+            informações por meio do nosso aplicativo mobile (“App”).
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Fechar
+          </button>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <a class="already-client-button" href="./login.html">Já sou cliente</a>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  </div>
+  <footer class="footer">
+    <a class="already-client-button" href="./login.html">Já sou cliente</a>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="../js/via-cep.js"></script>
+</body>
+
 </html>

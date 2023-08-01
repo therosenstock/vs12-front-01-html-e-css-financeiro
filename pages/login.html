@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="../assets/logo.svg" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <link rel="stylesheet" href="../styles/login-media.css" />
-    <title>Login | InnovBank</title>
-  </head>
-  <body>
-    <header class="header">
-      <a class="logo" href="../index.html">
-        <img
-          src="../assets/logo.svg"
-          alt="logo do banco innovbank com uma construção branca em um circulo vermelho"
-        />
-        <span><strong>Innov</strong>Bank</span>
-      </a>
-    </header>
-    <main class="main">
-      <div class="main-img"></div>
-      <div class="login-card">
-        <h1>Acesse sua conta</h1>
-        <form>
-          <div class="label-float">
-            <input type="text" placeholder="CPF" pattern="[0-9]{11}" required />
-            <label class="cpf-label">CPF</label>
-          </div>
-          <div class="label-float">
-            <input type="password" placeholder="Senha" required />
-            <label class="password-label">Senha</label>
-          </div>
-          <button type="submit" formaction="./conta.html">Entrar</button>
-        </form>
-      </div>
-    </main>
-    <footer class="footer">
-      <button>Esqueci a senha</button>
-      <a class="not-client-button" href="./cadastro.html">Não sou cliente</a>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="../assets/logo.svg" />
+  <link rel="stylesheet" href="../styles/login.css" />
+  <link rel="stylesheet" href="../styles/login-media.css" />
+  <title>Login | InnovBank</title>
+</head>
+
+<body>
+  <header class="header">
+    <a class="logo" href="../index.html">
+      <img src="../assets/logo.svg" alt="logo do banco innovbank com uma construção branca em um circulo vermelho" />
+      <span><strong>Innov</strong>Bank</span>
+    </a>
+  </header>
+  <main class="main">
+    <div class="main-img"></div>
+    <div class="login-card">
+      <h1>Acesse sua conta</h1>
+      <form>
+        <div class="label-float">
+          <input type="email" placeholder="E-mail" required />
+          <label class="email-label">E-mail</label>
+        </div>
+        <div class="label-float">
+          <input type="password" placeholder="Senha" required />
+          <label class="password-label">Senha</label>
+        </div>
+        <button type="submit" formaction="./conta.html">Entrar</button>
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <button>Esqueci a senha</button>
+    <a class="not-client-button" href="./cadastro.html">Não sou cliente</a>
+  </footer>
+</body>
+
 </html>
