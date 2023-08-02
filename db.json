@@ -117,21 +117,23 @@
       "transacoesDebito":[
         {
           "id": 1,
-          "tipo": "Pix",
-          "valor": -50,
+          "tipo": "Saque",
+          "valor": 90,
+          "sinal": "- R$ ",
           "hora": "18:58",
           "data": "21/07/2023",
-          "destino": "Cristina Jung",
+          "destino": "ATM Caldeira",
           "classe": "red",
           "origem": "conta"
         },
         {
           "id": 2,
-          "tipo": "TED",
-          "valor": -500,
+          "tipo": "Pix",
+          "valor": 400,
+          "sinal": "- R$ ",
           "hora": "19:58",
           "data": "21/07/2023",
-          "destino": "Fabiola Rodrigues",
+          "destino": "Monara Calado",
           "classe": "red",
           "origem": "conta"
         },
@@ -139,11 +141,12 @@
           "id": 3,
           "tipo": "Salário",
           "valor": 5000,
+          "sinal": "+ R$ ",
           "hora": "12:58",
           "data": "31/07/2023",
-          "destino": "DBC Company",
+          "destino": "conta",
           "classe": "green",
-          "origem": "conta"
+          "origem": "DBC Company"
         }
       ]
     }
@@ -160,7 +163,7 @@
       "id": 2,
       "nome": "Anne",
       "title": "Excelente equipe!",
-      "body": "A equipe é maravilhosa. Sempre prestativa e auxiliando em todas as minhas duvidas. Parabéns!",
+     "body": "A equipe é maravilhosa. Sempre prestativa e auxiliando em todas as minhas duvidas. Parabéns!",
       "note": 5
     },
     {
