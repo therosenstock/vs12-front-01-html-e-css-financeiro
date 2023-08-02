@@ -3,7 +3,12 @@ const id = parseInt(params.get("id")); // Convertemos o ID para um número intei
 
 const url = `https://my-json-server.typicode.com/therosenstock/vs12-front-01-html-e-css-financeiro/users/${id}`;
 
-fetch(url)
+fetch(url, {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
   .then((response) => {
     if (response.ok) {
       return response.json();

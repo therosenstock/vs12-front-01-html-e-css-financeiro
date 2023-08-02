@@ -17,16 +17,16 @@
       "transacoesDebito":[
       {
         "id": 1,
-        "tipo": "pix",
+        "tipo": "Saque",
         "valor": -50,
         "hora": "18:58",
         "data": "21/07/2023",
-        "destino": "Rafael Ramos",
+        "destino": "ATM Caldeira",
         "origem": "conta"
       },
       {
         "id": 2,
-        "tipo": "transferência TED",
+        "tipo": "TED",
         "valor": -200,
         "hora": "19:58",
         "data": "21/07/2023",
@@ -35,7 +35,7 @@
       },
       {
         "id": 3,
-        "tipo": "salário",
+        "tipo": "Salário",
         "valor": 5000,
         "hora": "12:58",
         "data": "31/07/2023",
@@ -61,7 +61,7 @@
       "transacoesDebito":[
       {
         "id": 1,
-        "tipo": "pix",
+        "tipo": "Pix",
         "valor": -50,
         "hora": "18:58",
         "data": "21/07/2023",
@@ -70,7 +70,7 @@
       },
       {
         "id": 2,
-        "tipo": "transferência TED",
+        "tipo": "TED",
         "valor": -500,
         "hora": "19:58",
         "data": "21/07/2023",
@@ -106,7 +106,7 @@
       "transacoesDebito":[
       {
         "id": 1,
-        "tipo": "pix",
+        "tipo": "Pix",
         "valor": -80,
         "hora": "18:58",
         "data": "21/07/2023",
@@ -115,7 +115,7 @@
       },
       {
         "id": 2,
-        "tipo": "transferência TED",
+        "tipo": "TED",
         "valor": -300,
         "hora": "19:58",
         "data": "21/07/2023",
@@ -142,6 +142,26 @@
       "body": "Sempre sou bem atendida em qualquer meio, seja agência, chat, telefone. Sempre me ajudam com todas as dúvidas e decisôes financeiras!",
       "note": 5
     }
+  ],
+  "tipos":[
+    {
+      "tipo": "Pix",
+      "icone": "../assets/ico-01.svg"
+    },
+    {
+      "tipo": "TED",
+      "icone": "ph-fill ph-eye"
+    },
+    {
+      "tipo": "Salário",
+      "icone": "ph-fill ph-hand-coins"
+    },
+    {
+      "tipo": "Saque",
+      "icone": "ph-fill ph-money"
+
+    }
+
   ]
 }
 
