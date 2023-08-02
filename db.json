@@ -21,7 +21,7 @@
         "valor": 50,
         "sinal": "- R$ ",
         "hora": "18:58",
-        "data": "21/07/2023",
+        "data": "02/08/2023",
         "destino": "ATM Caldeira",
         "classe": "red",
         "origem": "conta"
@@ -32,7 +32,7 @@
         "valor": 200,
         "sinal": "- R$ ",
         "hora": "19:58",
-        "data": "21/07/2023",
+        "data": "02/08/2023",
         "destino": "Monara Calado",
         "classe": "red",
         "origem": "conta"
@@ -47,6 +47,28 @@
         "destino": "conta",
         "classe": "green",
         "origem": "DBC Company"
+      },
+      {
+        "id": 4,
+        "tipo": "Pix",
+        "valor": 500,
+        "sinal": "- R$ ",
+        "hora": "12:58",
+        "data": "31/07/2023",
+        "destino": "Nicolas Silva",
+        "classe": "red",
+        "origem": "conta"
+      },
+      {
+        "id": 5,
+        "tipo": "Saque",
+        "valor": 100,
+        "sinal": "- R$ ",
+        "hora": "18:58",
+        "data": "21/07/2023",
+        "destino": "ATM Caldeira",
+        "classe": "red",
+        "origem": "conta"
       }
 
     ]},
@@ -71,7 +93,7 @@
         "valor": 80,
         "sinal": "- R$ ",
         "hora": "18:58",
-        "data": "21/07/2023",
+        "data": "01/08/2023",
         "destino": "Rafael Ramos",
         "classe": "red",
         "origem": "conta"
@@ -82,7 +104,7 @@
         "valor": 500,
         "sinal": "- R$ ",
         "hora": "19:58",
-        "data": "21/07/2023",
+        "data": "31/07/2023",
         "destino": "Fabiola Rodrigues",
         "classe": "red",
         "origem": "conta"
@@ -121,7 +143,7 @@
           "valor": 90,
           "sinal": "- R$ ",
           "hora": "18:58",
-          "data": "21/07/2023",
+          "data": "31/07/2023",
           "destino": "ATM Caldeira",
           "classe": "red",
           "origem": "conta"
@@ -132,7 +154,7 @@
           "valor": 400,
           "sinal": "- R$ ",
           "hora": "19:58",
-          "data": "21/07/2023",
+          "data": "29/07/2023",
           "destino": "Monara Calado",
           "classe": "red",
           "origem": "conta"
@@ -143,7 +165,7 @@
           "valor": 5000,
           "sinal": "+ R$ ",
           "hora": "12:58",
-          "data": "31/07/2023",
+          "data": "29/07/2023",
           "destino": "conta",
           "classe": "green",
           "origem": "DBC Company"
@@ -184,7 +206,7 @@
   "tipos":[
     {
       "tipo": "Pix",
-      "icone": "src='../assets/ico-01.svg'",
+      "icone": "src='../assets/ico-03.svg'",
       "tag": "img"
     },
     {
