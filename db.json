@@ -11,7 +11,7 @@
       "senha": "1234",
       "agencia": "0100",
       "conta": "89785",
-      "saldo": 2000,
+      "saldo": 2180,
       "limiteCartao": 9000,
       "fatura": 1700,
       "transacoesDebito":[
@@ -21,10 +21,10 @@
         "valor": 50,
         "sinal": "- R$ ",
         "hora": "18:58",
-        "data": "21/07/2023",
+        "data": "02/08/2023",
         "destino": "ATM Caldeira",
         "classe": "red",
-        "origem": "conta"
+        "modal": "fabiola1"
       },
       {
         "id": 2,
@@ -32,10 +32,10 @@
         "valor": 200,
         "sinal": "- R$ ",
         "hora": "19:58",
-        "data": "21/07/2023",
+        "data": "02/08/2023",
         "destino": "Monara Calado",
         "classe": "red",
-        "origem": "conta"
+        "modal": "fabiola2"
       },
       {
         "id": 3,
@@ -44,9 +44,31 @@
         "sinal": "+ R$ ",
         "hora": "12:58",
         "data": "31/07/2023",
-        "destino": "conta",
+        "destino": "DBC Company",
         "classe": "green",
-        "origem": "DBC Company"
+        "modal": "fabiola3"
+      },
+      {
+        "id": 4,
+        "tipo": "Pix",
+        "valor": 500,
+        "sinal": "- R$ ",
+        "hora": "12:58",
+        "data": "31/07/2023",
+        "destino": "Nicolas Silva",
+        "classe": "red",
+        "modal": "fabiola4"
+      },
+      {
+        "id": 5,
+        "tipo": "Saque",
+        "valor": 100,
+        "sinal": "- R$ ",
+        "hora": "18:58",
+        "data": "21/07/2023",
+        "destino": "ATM Caldeira",
+        "classe": "red",
+        "modal": "fabiola5"
       }
 
     ]},
@@ -61,7 +83,7 @@
       "senha": "1234",
       "agencia": "0200",
       "conta": "82285",
-      "saldo": 2000,
+      "saldo": 1500,
       "limiteCartao": 9000,
       "fatura": 1700,
       "transacoesDebito":[
@@ -71,10 +93,10 @@
         "valor": 80,
         "sinal": "- R$ ",
         "hora": "18:58",
-        "data": "21/07/2023",
+        "data": "01/08/2023",
         "destino": "Rafael Ramos",
         "classe": "red",
-        "origem": "conta"
+        "modal": "monara1"
       },
       {
         "id": 2,
@@ -82,10 +104,11 @@
         "valor": 500,
         "sinal": "- R$ ",
         "hora": "19:58",
-        "data": "21/07/2023",
+        "data": "31/07/2023",
         "destino": "Fabiola Rodrigues",
         "classe": "red",
-        "origem": "conta"
+        "modal": "monara2"
+
       },
       {
         "id": 3,
@@ -96,7 +119,8 @@
         "data": "31/07/2023",
         "destino": "DBC Company",
         "classe": "green",
-        "origem": "conta"
+        "modal": "monara3"
+
       }
     ]
     },
@@ -121,10 +145,11 @@
           "valor": 90,
           "sinal": "- R$ ",
           "hora": "18:58",
-          "data": "21/07/2023",
+          "data": "31/07/2023",
           "destino": "ATM Caldeira",
           "classe": "red",
-          "origem": "conta"
+          "modal": "davi1"
+
         },
         {
           "id": 2,
@@ -132,10 +157,10 @@
           "valor": 400,
           "sinal": "- R$ ",
           "hora": "19:58",
-          "data": "21/07/2023",
+          "data": "29/07/2023",
           "destino": "Monara Calado",
           "classe": "red",
-          "origem": "conta"
+          "modal": "davi2"
         },
         {
           "id": 3,
@@ -143,10 +168,11 @@
           "valor": 5000,
           "sinal": "+ R$ ",
           "hora": "12:58",
-          "data": "31/07/2023",
-          "destino": "conta",
+          "data": "29/07/2023",
+          "destino": "DBC Company",
           "classe": "green",
-          "origem": "DBC Company"
+          "modal": "davi3"
+
         }
       ]
     }
@@ -184,22 +210,22 @@
   "tipos":[
     {
       "tipo": "Pix",
-      "icone": "img src='../assets/ico-01.svg'",
+      "icone": "src='../assets/ico-03.svg'",
       "tag": "img"
     },
     {
       "tipo": "TED",
-      "icone": "i class='ph-fill ph-eye'",
-      "tag": "i"
+      "icone": "src='../assets/ico-01.svg'",
+      "tag": "img"
     },
     {
       "tipo": "Salário",
-      "icone": "ph-fill ph-hand-coins",
+      "icone": "class = 'ph-fill ph-hand-coins'",
       "tag": "i"
     },
     {
       "tipo": "Saque",
-      "icone": "i class='ph-fill ph-money'",
+      "icone": "class = 'ph-fill ph-money'",
       "tag": "i"
 
     }

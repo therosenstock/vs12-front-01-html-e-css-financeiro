@@ -20,7 +20,6 @@ fetch(url, {
     if (user) {
       render(user);
     }
-    render(user);
   })
   .catch((error) => {
     console.log("Erro", error);
@@ -48,14 +47,15 @@ function render(user) {
 
 function renderTransacoes(transacoes) {
   const container = document.getElementById("list-transaction");
-  let list = "";
+  const body = document.getElementsByTagName("body");
+  container.innerHTML = "";
   transacoes.forEach(async (transacao) => {
     let tipos = await renderTipo(transacao.tipo);
     console.log(tipos);
-    list += `<div class="transaction">
+    container.innerHTML += `<div class="transaction">
     <div class="content-aside">
       <div class="transaction-icon">
-        <${tipos.tag} class=${tipos.icone}></${tipos.tag}>
+        <${tipos.tag} ${tipos.icone}"></${tipos.tag}>
       </div>
       <div class="transaction-info">
         <span class="notice">${transacao.tipo}</span>
@@ -66,14 +66,33 @@ function renderTransacoes(transacoes) {
     </div>
     <div class="transation-value">
       <h2 class="value-title ${transacao.classe}">
-        - R$ 50,00
+        ${transacao.sinal} ${transacao.valor}
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#001">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#${transacao.modal}">
           <i class="ph-fill ph-eye"></i>
         </button>
       </h2>
     </div>
   </div>`;
+
+    body.innerHTML += `  
+    <div class="modal fade" id="${transacao.modal}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Detalhes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ${transacao.tipo} realizado/recebido em ${transacao.data} às ${transacao.hora}.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+`;
   });
 }
 
