@@ -184,22 +184,22 @@
   "tipos":[
     {
       "tipo": "Pix",
-      "icone": "img src='../assets/ico-01.svg'",
+      "icone": "src='../assets/ico-01.svg'",
       "tag": "img"
     },
     {
       "tipo": "TED",
-      "icone": "i class='ph-fill ph-eye'",
+      "icone": "class = 'ph-fill ph-eye'",
       "tag": "i"
     },
     {
       "tipo": "Salário",
-      "icone": "ph-fill ph-hand-coins",
+      "icone": "class = 'ph-fill ph-hand-coins'",
       "tag": "i"
     },
     {
       "tipo": "Saque",
-      "icone": "i class='ph-fill ph-money'",
+      "icone": "class = 'ph-fill ph-money'",
       "tag": "i"
 
     }

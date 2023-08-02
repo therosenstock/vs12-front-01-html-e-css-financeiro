@@ -20,7 +20,6 @@ fetch(url, {
     if (user) {
       render(user);
     }
-    render(user);
   })
   .catch((error) => {
     console.log("Erro", error);
@@ -48,14 +47,14 @@ function render(user) {
 
 function renderTransacoes(transacoes) {
   const container = document.getElementById("list-transaction");
-  let list = "";
+  container.innerHTML = "";
   transacoes.forEach(async (transacao) => {
     let tipos = await renderTipo(transacao.tipo);
     console.log(tipos);
-    list += `<div class="transaction">
+    container.innerHTML += `<div class="transaction">
     <div class="content-aside">
       <div class="transaction-icon">
-        <${tipos.tag} class=${tipos.icone}></${tipos.tag}>
+        <${tipos.tag} ${tipos.icone}"></${tipos.tag}>
       </div>
       <div class="transaction-info">
         <span class="notice">${transacao.tipo}</span>
@@ -66,7 +65,7 @@ function renderTransacoes(transacoes) {
     </div>
     <div class="transation-value">
       <h2 class="value-title ${transacao.classe}">
-        - R$ 50,00
+        ${transacao.sinal} ${transacao.valor}
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#001">
           <i class="ph-fill ph-eye"></i>
