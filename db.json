@@ -53,9 +53,41 @@
       "bairro": "Linha do Tiro",
       "cidadeuf": "Recife - PE",
       "senha": "1234",
-      "conta": {
-        "id": 1
+      "agencia": "0200",
+      "conta": "82285",
+      "saldo": 2000,
+      "limiteCartao": 9000,
+      "fatura": 1700,
+      "transacoesDebito":[
+      {
+        "id": 1,
+        "tipo": "pix",
+        "valor": -50,
+        "hora": "18:58",
+        "data": "21/07/2023",
+        "destino": "Cristina Jung",
+        "origem": "conta"
+      },
+      {
+        "id": 2,
+        "tipo": "transferência TED",
+        "valor": -500,
+        "hora": "19:58",
+        "data": "21/07/2023",
+        "destino": "Fabiola Rodrigues",
+        "origem": "conta"
+      },
+      {
+        "id": 3,
+        "tipo": "salário",
+        "valor": 5000,
+        "hora": "12:58",
+        "data": "31/07/2023",
+        "destino": "conta",
+        "origem": "DBC Company"
       }
+
+    ]
     },
     {
       "id": 3,
@@ -66,9 +98,41 @@
       "bairro": "São Pedro",
       "cidadeuf": "João Pessoa - PB",
       "senha": "1234",
-      "conta": {
-        "id": 1
+      "agencia": "0300",
+      "conta": "81115",
+      "saldo": 2000,
+      "limiteCartao": 9000,
+      "fatura": 1700,
+      "transacoesDebito":[
+      {
+        "id": 1,
+        "tipo": "pix",
+        "valor": -80,
+        "hora": "18:58",
+        "data": "21/07/2023",
+        "destino": "Rafael Ramos",
+        "origem": "conta"
+      },
+      {
+        "id": 2,
+        "tipo": "transferência TED",
+        "valor": -300,
+        "hora": "19:58",
+        "data": "21/07/2023",
+        "destino": "Monara Calado",
+        "origem": "conta"
+      },
+      {
+        "id": 3,
+        "tipo": "salário",
+        "valor": 5000,
+        "hora": "12:58",
+        "data": "31/07/2023",
+        "destino": "conta",
+        "origem": "DBC Company"
       }
+
+    ]
     }
   ],
   "comments":[
