@@ -22,16 +22,16 @@
     <div class="main-img"></div>
     <div class="login-card">
       <h1>Acesse sua conta</h1>
-      <form>
+      <form id="form">
         <div class="label-float">
-          <input type="email" placeholder="E-mail" required />
+          <input type="email" id="email" placeholder="E-mail" required />
           <label class="email-label">E-mail</label>
         </div>
         <div class="label-float">
-          <input type="password" placeholder="Senha" required />
+          <input type="password" id="senha" placeholder="Senha" required />
           <label class="password-label">Senha</label>
         </div>
-        <button type="submit" formaction="./conta.html">Entrar</button>
+        <button type="submit" id="btnLogin">Entrar</button>
       </form>
     </div>
   </main>
@@ -39,6 +39,9 @@
     <button>Esqueci a senha</button>
     <a class="not-client-button" href="./cadastro.html">Não sou cliente</a>
   </footer>
+  <script src="../js/database.js"></script>
+
+
 </body>
 
 </html>
