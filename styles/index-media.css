@@ -85,13 +85,16 @@
         opacity: 0.9;
     }
 
-    .btn-open-account-nav {
+    .btn-open-account-nav, .a-contato {
         all: unset;
         display: block;
-        background-color: #AD1919;
         color: #FFF;
         border-radius: 0.625rem;
         padding: 1rem 2rem;
+    }
+
+    .btn-open-account-nav{
+        background-color: #AD1919;
     }
 
     .big-hero {

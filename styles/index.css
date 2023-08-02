@@ -294,7 +294,7 @@ img {
     cursor: pointer;
 }
 
-.offcanvas-body a {
+.offcanvas-body a.destaque {
     border-radius: 0.625rem;
     background: #AD1919;
     padding: 1rem 2rem;
