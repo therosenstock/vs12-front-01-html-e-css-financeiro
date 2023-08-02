@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Fabiola",
+      "email": "fabiolars2009@hotmail.com",
+      "cep": "08290480",
+      "endereco": "Rua Américo Lopes",
+      "bairro": "Vila Carmosina",
+      "cidadeuf": "São Paulo - SP",
+      "senha": "1234",
+      "conta": {
+        "id": 1
+      }
+    },
+    {
+      "id": 2,
+      "nome": "Monara",
+      "email": "monaracalado@gmail.com",
+      "cep": "52131155",
+      "endereco": "Rua Uriel de Holanda",
+      "bairro": "Linha do Tiro",
+      "cidadeuf": "Recife - PE",
+      "senha": "1234",
+      "conta": {
+        "id": 1
+      }
+    },
+    {
+      "id": 3,
+      "nome": "Davi",
+      "email": "davikennedy@gmail.com",
+      "cep": "01012480",
+      "endereco": "Rua Arraial de Santa Barbara",
+      "bairro": "São Pedro",
+      "cidadeuf": "João Pessoa - PB",
+      "senha": "1234",
+      "conta": {
+        "id": 1
+      }
+    }
+  ],
+  "comments":[
+    {
+      "id": 1,
+      "title": "Melhor banco!",
+      "body": "Sempre sou bem atendida em qualquer meio, seja agência, chat, telefone. Sempre me ajudam com todas as dúvidas e decisôes financeiras!",
+      "note": 5
+    }
+  ],
+  "account": [
+    {
+    "id": 1,
+    "agencia": "0100",
+    "conta": "89785",
+    "saldo": 2000,
+    "limiteCartao": 9000,
+    "fatura": 1700,
+    "transacoesDebito": {
+      "id": 1
+    },
+    "transacoesCredito": {
+      "id": 1
+    }
+  }
+],
+  "transacoesDebito": [
+  {
+    "id": 1,
+    "tipo": "pix",
+    "valor": -50,
+    "hora": "18:58",
+    "data": "21/07/2023",
+    "destino": "Rafael Ramos",
+    "origem": "conta"
+  },
+  {
+    "id": 1,
+    "tipo": "transferência TED",
+    "valor": -200,
+    "hora": "19:58",
+    "data": "21/07/2023",
+    "destino": "Monara Calado",
+    "origem": "conta"
+  },
+  {
+    "id": 1,
+    "tipo": "salário",
+    "valor": 5000,
+    "hora": "12:58",
+    "data": "31/07/2023",
+    "destino": "conta",
+    "origem": "DBC Company"
+  }
+]
+}
+
