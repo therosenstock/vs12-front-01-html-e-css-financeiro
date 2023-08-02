@@ -30,28 +30,29 @@
       <div class="main-img"></div>
       <div class="register-card d-flex flex-column align-items-center">
         <h1>Deixe sua avaliação</h1>
-        <form class="d-flex flex-column ">
+        <form id="avaliacaoForm" class="d-flex flex-column ">
           <div class="label-float">
-            <input
+            <input id="nome"
               type="text"
               placeholder="Nome"
               pattern="[A-Za-z\s]+"
               required
             />
-            <label class="name-label">Nome</label>
+            <label id="nome" class="name-label">Nome</label>
           </div>
           <div class="label-float">
             <input
+            id="titulo"
               type="text"
               placeholder="Título"
               pattern="[A-Za-z\s]+"
               required
             />
-            <label class="name-label">Título</label>
+            <label id="titulo" class="name-label">Título</label>
           </div>
           
           <div class="label-float">
-            <ul class="avaliacao d-flex align-items-center justify-content-center  p-0  ">
+            <ul id="avaliacaoUl" class="avaliacao d-flex align-items-center justify-content-center  p-0  ">
               <li class="star-icon ativo" data-avaliacao="1"></li>
               <li class="star-icon" data-avaliacao="2"></li>
               <li class="star-icon" data-avaliacao="3"></li>
@@ -81,6 +82,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/avaliacao.js"></script>
     <script src="../js/stars.js"></script>
   </body>
 </html>
