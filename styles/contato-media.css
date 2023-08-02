@@ -1,0 +1,85 @@
+@media screen and (min-width: 1040px) {
+    .logo {
+        transition: opacity 0.3s ease-in;
+    }
+
+    .logo:hover {
+        opacity: 0.8;
+    }
+
+    .main {
+        background-image: none;
+        padding: 0;
+    }
+
+    .main-img {
+        background-image: url('../assets/contato-img.png');
+        background-size: cover;
+        background-position: center;
+        display: block;
+        height: 100%;
+        width: 50vw;
+    }
+
+    .register-card {
+        width: 50vw;
+    }
+
+    .register-card button,
+    .footer button,
+    .footer a {
+        transition: opacity 0.3s ease-in;
+    }
+
+    .register-card button:hover,
+    .footer button:hover,
+    .footer a:hover {
+        opacity: 0.8;
+    }
+
+    .footer {
+        width: 50%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-height: 730px) and (min-width: 768px) {
+    .register-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .register-card button,
+    .footer button,
+    .footer a {
+        font-size: 1.2rem;
+    }
+
+    .label-float label {
+        font-size: 1.3rem;
+    }
+
+    .label-float input {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    #textarea{
+        height: 220px;
+    }
+}
+
+@media screen and (max-width:425px){
+    span{
+        font-size: 12px;
+    }
+
+    span img{
+    display: none;
+    }
+
+}
