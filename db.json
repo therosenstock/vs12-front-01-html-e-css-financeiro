@@ -11,7 +11,7 @@
       "senha": "1234",
       "agencia": "0100",
       "conta": "89785",
-      "saldo": 2000,
+      "saldo": 2180,
       "limiteCartao": 9000,
       "fatura": 1700,
       "transacoesDebito":[
@@ -83,7 +83,7 @@
       "senha": "1234",
       "agencia": "0200",
       "conta": "82285",
-      "saldo": 2000,
+      "saldo": 1500,
       "limiteCartao": 9000,
       "fatura": 1700,
       "transacoesDebito":[
@@ -161,7 +161,6 @@
           "destino": "Monara Calado",
           "classe": "red",
           "modal": "davi2"
-
         },
         {
           "id": 3,
