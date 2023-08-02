@@ -25,8 +25,17 @@ function render(user) {
   const nomeConta = document.getElementById("nomeConta");
   const agenciaConta = document.getElementById("agenciaConta");
   const contaConta = document.getElementById("contaConta");
+  const agenciaContaMB = document.getElementById("agenciaContaMB");
+  const contaContaMB = document.getElementById("contaContaMB");
+  const saldo = document.getElementById("saldo");
 
   nomeConta.innerHTML = user.nome;
   agenciaConta.innerHTML = user.agencia;
   contaConta.innerHTML = user.conta;
+  agenciaContaMB.innerHTML = user.agencia;
+  contaContaMB.innerHTML = user.conta;
+  let round = parseFloat(user.saldo);
+  round = round.toFixed(2);
+  round = round.replace(".", ",");
+  saldo.innerHTML = `R$ ${round}`;
 }
