@@ -18,28 +18,34 @@
       {
         "id": 1,
         "tipo": "Saque",
-        "valor": -50,
+        "valor": 50,
+        "sinal": "- R$ ",
         "hora": "18:58",
         "data": "21/07/2023",
         "destino": "ATM Caldeira",
+        "classe": "red",
         "origem": "conta"
       },
       {
         "id": 2,
         "tipo": "TED",
-        "valor": -200,
+        "valor": 200,
+        "sinal": "- R$ ",
         "hora": "19:58",
         "data": "21/07/2023",
         "destino": "Monara Calado",
+        "classe": "red",
         "origem": "conta"
       },
       {
         "id": 3,
         "tipo": "Salário",
         "valor": 5000,
+        "sinal": "+ R$ ",
         "hora": "12:58",
         "data": "31/07/2023",
         "destino": "conta",
+        "classe": "green",
         "origem": "DBC Company"
       }
 
@@ -62,31 +68,36 @@
       {
         "id": 1,
         "tipo": "Pix",
-        "valor": -50,
+        "valor": 80,
+        "sinal": "- R$ ",
         "hora": "18:58",
         "data": "21/07/2023",
-        "destino": "Cristina Jung",
+        "destino": "Rafael Ramos",
+        "classe": "red",
         "origem": "conta"
       },
       {
         "id": 2,
         "tipo": "TED",
-        "valor": -500,
+        "valor": 500,
+        "sinal": "- R$ ",
         "hora": "19:58",
         "data": "21/07/2023",
         "destino": "Fabiola Rodrigues",
+        "classe": "red",
         "origem": "conta"
       },
       {
         "id": 3,
-        "tipo": "salário",
+        "tipo": "Salário",
         "valor": 5000,
+        "sinal": "+ R$ ",
         "hora": "12:58",
         "data": "31/07/2023",
-        "destino": "conta",
-        "origem": "DBC Company"
+        "destino": "DBC Company",
+        "classe": "green",
+        "origem": "conta"
       }
-
     ]
     },
     {
@@ -104,35 +115,37 @@
       "limiteCartao": 9000,
       "fatura": 1700,
       "transacoesDebito":[
-      {
-        "id": 1,
-        "tipo": "Pix",
-        "valor": -80,
-        "hora": "18:58",
-        "data": "21/07/2023",
-        "destino": "Rafael Ramos",
-        "origem": "conta"
-      },
-      {
-        "id": 2,
-        "tipo": "TED",
-        "valor": -300,
-        "hora": "19:58",
-        "data": "21/07/2023",
-        "destino": "Monara Calado",
-        "origem": "conta"
-      },
-      {
-        "id": 3,
-        "tipo": "salário",
-        "valor": 5000,
-        "hora": "12:58",
-        "data": "31/07/2023",
-        "destino": "conta",
-        "origem": "DBC Company"
-      }
-
-    ]
+        {
+          "id": 1,
+          "tipo": "Pix",
+          "valor": -50,
+          "hora": "18:58",
+          "data": "21/07/2023",
+          "destino": "Cristina Jung",
+          "classe": "red",
+          "origem": "conta"
+        },
+        {
+          "id": 2,
+          "tipo": "TED",
+          "valor": -500,
+          "hora": "19:58",
+          "data": "21/07/2023",
+          "destino": "Fabiola Rodrigues",
+          "classe": "red",
+          "origem": "conta"
+        },
+        {
+          "id": 3,
+          "tipo": "Salário",
+          "valor": 5000,
+          "hora": "12:58",
+          "data": "31/07/2023",
+          "destino": "DBC Company",
+          "classe": "green",
+          "origem": "conta"
+        }
+      ]
     }
   ],
   "comments":[
@@ -168,19 +181,23 @@
   "tipos":[
     {
       "tipo": "Pix",
-      "icone": "../assets/ico-01.svg"
+      "icone": "img src='../assets/ico-01.svg'",
+      "tag": "img"
     },
     {
       "tipo": "TED",
-      "icone": "ph-fill ph-eye"
+      "icone": "i class='ph-fill ph-eye'",
+      "tag": "i"
     },
     {
       "tipo": "Salário",
-      "icone": "ph-fill ph-hand-coins"
+      "icone": "ph-fill ph-hand-coins",
+      "tag": "i"
     },
     {
       "tipo": "Saque",
-      "icone": "ph-fill ph-money"
+      "icone": "i class='ph-fill ph-money'",
+      "tag": "i"
 
     }
 
