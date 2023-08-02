@@ -44,9 +44,9 @@
         "sinal": "+ R$ ",
         "hora": "12:58",
         "data": "31/07/2023",
-        "destino": "conta",
+        "destino": "DBC Company",
         "classe": "green",
-        "origem": "DBC Company"
+        "origem": "conta"
       },
       {
         "id": 4,
@@ -166,9 +166,9 @@
           "sinal": "+ R$ ",
           "hora": "12:58",
           "data": "29/07/2023",
-          "destino": "conta",
+          "destino": "DBC Company",
           "classe": "green",
-          "origem": "DBC Company"
+          "origem": "origem"
         }
       ]
     }
