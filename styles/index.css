@@ -299,3 +299,8 @@ img {
     background: #AD1919;
     padding: 1rem 2rem;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
