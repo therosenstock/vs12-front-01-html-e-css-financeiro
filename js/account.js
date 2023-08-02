@@ -47,7 +47,7 @@ function render(user) {
 
 function renderTransacoes(transacoes) {
   const container = document.getElementById("list-transaction");
-  const body = document.getElementsByTagName("body");
+  const div = document.getElementById("modal");
   container.innerHTML = "";
   transacoes.forEach(async (transacao) => {
     let tipos = await renderTipo(transacao.tipo);
@@ -75,7 +75,7 @@ function renderTransacoes(transacoes) {
     </div>
   </div>`;
 
-    body.innerHTML += `  
+    div.innerHTML += `  
     <div class="modal fade" id="${transacao.modal}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
