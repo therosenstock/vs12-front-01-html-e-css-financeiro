@@ -27,7 +27,6 @@ fetch(url, {
   });
 
 function render(user) {
-  console.log(user);
   const nomeConta = document.getElementById("nomeConta");
   const agenciaConta = document.getElementById("agenciaConta");
   const contaConta = document.getElementById("contaConta");
@@ -50,11 +49,13 @@ function render(user) {
 function renderTransacoes(transacoes) {
   const container = document.getElementById("list-transaction");
   let list = "";
-  transacoes.forEach((transacao) => {
+  transacoes.forEach(async (transacao) => {
+    let tipos = await renderTipo(transacao.tipo);
+    console.log(tipos);
     list += `<div class="transaction">
     <div class="content-aside">
       <div class="transaction-icon">
-        <img src="../assets/ico-01.svg" alt="" srcset="">
+        <${tipos.tag} class=${tipos.icone}></${tipos.tag}>
       </div>
       <div class="transaction-info">
         <span class="notice">${transacao.tipo}</span>
@@ -74,4 +75,30 @@ function renderTransacoes(transacoes) {
     </div>
   </div>`;
   });
+}
+
+async function renderTipo(tipo) {
+  let url2 = `https://my-json-server.typicode.com/therosenstock/vs12-front-01-html-e-css-financeiro/tipos`;
+
+  return fetch(url2, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json(); // Retorne o JSON da resposta
+      }
+      throw new Error("Erro ao obter os tipos");
+    })
+    .then((types) => {
+      const tipoEncontrado = types.find((type) => type.tipo === tipo);
+      if (tipoEncontrado) {
+        return tipoEncontrado;
+      }
+    })
+    .catch((error) => {
+      console.log("Erro", error);
+    });
 }
