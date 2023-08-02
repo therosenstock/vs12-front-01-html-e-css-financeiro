@@ -90,7 +90,7 @@ button {
     margin-top: -1.1rem;
 }
 
-#textarea{
+#textarea {
     background-color: #00000000;
 }
 
@@ -115,23 +115,31 @@ footer div:first-child {
     border-right: 1px solid #fff;
 }
 
+.avaliacao {
+    margin-top: -16px;
+}
 
-  .star-icon{
+.star-icon {
     list-style-type: none;
     border: 1px solid #ffffff00;
     cursor: pointer;
     color: #ffe500;
-    font-size: 40px;/* alterar o tamanho das estrelas */
-  }
-  .star-icon::before{
+    font-size: 40px;
+    /* alterar o tamanho das estrelas */
+}
+
+.star-icon::before {
     content: "\2605";
-  }
-  .star-icon.ativo ~ .star-icon::before{
+}
+
+.star-icon.ativo~.star-icon::before {
     content: "\2606";
-  }
-  .avaliacao:hover .star-icon::before{
+}
+
+.avaliacao:hover .star-icon::before {
     content: "\2605";
-  }
-  .star-icon:hover ~ .star-icon::before{
+}
+
+.star-icon:hover~.star-icon::before {
     content: "\2606";
-  }
+}
