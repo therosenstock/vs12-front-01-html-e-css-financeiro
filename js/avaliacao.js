@@ -8,7 +8,7 @@ form.addEventListener('submit', (event) => {
     const nome = document.getElementById('nome').value;
     const titulo = document.getElementById('titulo').value;
     const comentario = document.getElementById('textarea').value;
-    const nota = document.querySelector('li.ativo').textContent;
+    const nota = document.querySelector('li.ativo').getAttribute('data-avaliacao');
 
     const avaliacaoData = {
         nome: nome,
@@ -36,7 +36,7 @@ form.addEventListener('submit', (event) => {
         alert( 'Avaliação envada com sucesso');
     })
     .catch(error => {
-        console.alert("Erro ao enviar a avaliação: ", error.message);
+        console.error("Erro ao enviar a avaliação: ", error.message);
         alert( 'Erro ao enviar a avaliação. Tente mais tarde');
     })
 
