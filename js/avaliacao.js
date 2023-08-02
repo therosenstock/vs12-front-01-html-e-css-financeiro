@@ -31,13 +31,9 @@ form.addEventListener("submit", (event) => {
       }
       return response.json();
     })
-    .then((data) => {
-      console.log("Avaliação envada com sucesso", data);
-      alert("Avaliação envada com sucesso");
-    })
     .then(data => {
-        console.log('Avaliação envada com sucesso',data);
-        alert( 'Avaliação envada com sucesso');
+        console.log('Avaliação enviada com sucesso',data);
+        mostrarAlerta("Avaliação realizada com sucesso!");
     })
     .catch(error => {
         console.error("Erro ao enviar a avaliação: ", error.message);
@@ -45,3 +41,14 @@ form.addEventListener("submit", (event) => {
     })
 
 })
+
+
+function mostrarAlerta(texto) {
+    const alerta = document.getElementById("alerta");
+    alerta.classList.add("show");
+    alerta.innerText = texto;
+  
+    setTimeout(() => {
+      alerta.classList.remove("show");
+    }, 2000);
+  }

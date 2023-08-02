@@ -138,8 +138,30 @@
   "comments":[
     {
       "id": 1,
-      "title": "Melhor banco!",
-      "body": "Sempre sou bem atendida em qualquer meio, seja agência, chat, telefone. Sempre me ajudam com todas as dúvidas e decisôes financeiras!",
+      "nome": "Marcos",
+      "titulo": "Melhor banco!",
+      "comentario": "Sempre sou bem atendida em qualquer meio, seja agência, chat, telefone. Sempre me ajudam com todas as dúvidas e decisôes financeiras!",
+      "nota": 5
+    },
+    {
+      "id": 2,
+      "nome": "Anne",
+      "title": "Excelente equipe!",
+      "body": "A equipe é maravilhosa. Sempre prestativa e auxiliando em todas as minhas duvidas. Parabéns!",
+      "note": 5
+    },
+    {
+      "id": 3,
+      "nome": "Clara",
+      "title": "Ótimo serviço!",
+      "body": "Estou muito satisfeita com a qualidade dos serviços. Atende a todas as minhas necessiddes. Recomendo!",
+      "note": 5
+    },
+    {
+      "id": 4,
+      "nome": "Rafael",
+      "title": "Excelente atendimento!",
+      "body": "Fui muito bem atendida pela equipe. Resolveram meus problemas sem demora!",
       "note": 5
     }
   ],

@@ -143,3 +143,16 @@ footer div:first-child {
 .star-icon:hover~.star-icon::before {
     content: "\2606";
 }
+
+.alerta {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
+}
