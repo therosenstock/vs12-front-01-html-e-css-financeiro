@@ -1,3 +1,7 @@
+button {
+  all: unset;
+}
+
 .navbar {
   padding: 1rem;
   max-width: 100%;

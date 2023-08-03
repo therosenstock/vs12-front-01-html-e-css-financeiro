@@ -37,8 +37,8 @@ function render(user) {
   const contaContaMB = document.getElementById("contaContaMB");
   const saldo = document.getElementById("saldo");
   const fatura = document.getElementById("fatura");
-  const limiteTotal = document.getElementById("total");
-  const limiteUtilizado = document.getElementById("utilizado");
+  const limiteUsado = document.getElementById("utilizado");
+  const limiteDisponivel = document.getElementById("disponivel");
   console.log(user);
   nomeConta.innerHTML = user.nome;
   agenciaConta.innerHTML = user.agencia;
@@ -49,10 +49,11 @@ function render(user) {
   saldo.innerHTML = `R$ ${convert}`;
   convert = conversion(user.fatura);
   fatura.innerHTML = `R$ ${convert}`;
-  convert = conversion(user.limiteCartao);
-  limiteTotal.innerHTML = `R$ ${convert}`;
   convert = conversion(user.limiteUtilizado);
-  limiteUtilizado.innerHTML = `R$ ${convert}`;
+  limiteUsado.innerHTML = `R$ ${convert}`;
+  let disponivel = user.limiteCartao - user.limiteUtilizado;
+  convert = conversion(disponivel);
+  limiteDisponivel.innerHTML = `R$ ${convert}`;
   renderTransacoes(user.transacoesDebito);
 }
 

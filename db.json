@@ -3,6 +3,7 @@
     {
       "id": 1,
       "nome": "Fabiola",
+      "cpf": "111.222.333-96",
       "email": "fabiolars2009@hotmail.com",
       "cep": "08290480",
       "endereco": "Rua Américo Lopes",
@@ -76,6 +77,7 @@
     {
       "id": 2,
       "nome": "Monara",
+      "cpf": "111.222.333-96",
       "email": "monaracalado@gmail.com",
       "cep": "52131155",
       "endereco": "Rua Uriel de Holanda",
@@ -130,6 +132,8 @@
       "id": 3,
       "nome": "Davi",
       "email": "davikennedy@gmail.com",
+      "cpf": "111.222.333-96",
+
       "cep": "01012480",
       "endereco": "Rua Arraial de Santa Barbara",
       "bairro": "São Pedro",
