@@ -36,17 +36,23 @@ function render(user) {
   const agenciaContaMB = document.getElementById("agenciaContaMB");
   const contaContaMB = document.getElementById("contaContaMB");
   const saldo = document.getElementById("saldo");
-
+  const fatura = document.getElementById("fatura");
+  const limiteTotal = document.getElementById("total");
+  const limiteUtilizado = document.getElementById("utilizado");
+  console.log(user);
   nomeConta.innerHTML = user.nome;
   agenciaConta.innerHTML = user.agencia;
   contaConta.innerHTML = user.conta;
   agenciaContaMB.innerHTML = user.agencia;
   contaContaMB.innerHTML = user.conta;
-  let round = parseFloat(user.saldo);
-  round = round.toFixed(2);
-  round = round.replace(".", ",");
-  saldo.innerHTML = `R$ ${round}`;
-
+  let convert = conversion(user.saldo);
+  saldo.innerHTML = `R$ ${convert}`;
+  convert = conversion(user.fatura);
+  fatura.innerHTML = `R$ ${convert}`;
+  convert = conversion(user.limiteCartao);
+  limiteTotal.innerHTML = `R$ ${convert}`;
+  convert = conversion(user.limiteUtilizado);
+  limiteUtilizado.innerHTML = `R$ ${convert}`;
   renderTransacoes(user.transacoesDebito);
 }
 
@@ -101,6 +107,12 @@ function renderTransacoes(transacoes) {
   });
 }
 
+function conversion(valor) {
+  let round = parseFloat(valor);
+  round = round.toFixed(2);
+  round = round.replace(".", ",");
+  return round;
+}
 async function renderTipo(tipo) {
   let url2 = `https://my-json-server.typicode.com/therosenstock/vs12-front-01-html-e-css-financeiro/tipos`;
 
