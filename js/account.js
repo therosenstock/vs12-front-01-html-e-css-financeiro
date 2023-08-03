@@ -62,6 +62,9 @@ function render(user) {
   let disponivel = user.limiteCartao - user.limiteUtilizado;
   convert = conversion(disponivel);
   limiteDisponivel.innerHTML = `R$ ${convert}`;
+  let width = user.limiteUtilizado / (user.limiteCartao / 100);
+  const progresso = document.querySelector("#bar-progress");
+  progresso.style.width = `${width}%`;
   renderTransacoes(user.transacoesDebito);
 }
 
