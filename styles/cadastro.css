@@ -70,6 +70,14 @@ button {
     -moz-transition: all .3s ease-out;
 }
 
+input:focus:valid {
+    border-color: green;
+}
+
+input:focus:invalid {
+    border-color: red;
+}
+
 .register-card input::placeholder {
     color: transparent;
 }

@@ -30,15 +30,15 @@
           <label class="name-label">Nome</label>
         </div>
         <div class="label-float">
-          <input type="text" placeholder="CPF" pattern="[0-9]{11}" required />
+          <input id="cpf" type="text" placeholder="CPF" pattern="([0-9]{11})" maxlength="11" required />
           <label class="cpf-label">CPF</label>
         </div>
         <div class="label-float">
-          <input type="email" placeholder="E-mail" required />
+          <input id="email-passado" type="email" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
           <label class="email-label">E-mail</label>
         </div>
         <div class="label-float">
-          <input type="text" placeholder="CEP" pattern="[0-9]{8}" id="cep" required />
+          <input type="text" placeholder="CEP" maxlength="8" pattern="([0-9]{8})" id="cep" required />
           <label class="address-label">CEP</label>
         </div>
         <div class="label-float">
@@ -55,17 +55,17 @@
           <label class="address-label">Cidade - UF</label>
         </div>
         <div class="label-float">
-          <input type="password" placeholder="Senha" id='senha' required />
+          <input type="password" placeholder="Senha" minlength="6"  id='senha' required />
           <label class="password-label">Senha</label>
         </div>
         <label class="terms-label">
-          <input type="checkbox" name="terms" required />
+          <input id="checkbox" type="checkbox" name="terms" required />
           Estou de acordo com a
           <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Política de Privacidade.
           </button>
         </label>
-        <button type="submit" formaction="./conta.html">Abrir conta</button>
+        <button type="button" onclick="validacao()">Abrir conta</button>
       </form>
     </div>
   </main>
@@ -125,6 +125,7 @@
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="../js/via-cep.js"></script>
+  <script src="../js/cadastro.js" defer></script>
 </body>
 
 </html>
