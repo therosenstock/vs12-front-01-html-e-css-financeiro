@@ -207,11 +207,12 @@ function transferir() {
   const conta = document.getElementById("contaTransferencia").value;
   const agencia = document.getElementById("agenciaTransferencia").value;
   const valor = document.getElementById("valorTransferencia").value;
+  const alerta = document.getElementById("alerta");
 
   if (!conta.trim() || !agencia.trim() || !valor.trim()) {
     mostrarAlerta("Preencha os campos");
   } else {
-    mostrarAlerta("Transação realizada com sucesso!");
+    mostrarAlerta("Transação realizada com sucesso!", alerta);
     limparTransferencia();
   }
 }
