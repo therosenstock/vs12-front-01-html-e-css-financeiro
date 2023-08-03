@@ -1,191 +1,146 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/index-media.css" />
-    <link rel="stylesheet" href="./styles/global.css" />
-    <title>InnovBank</title>
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <a href="#" class="logo">
-          <img
-            src="./assets/logo.svg"
-            alt="logo do banco innovbank com uma construção branca em um circulo vermelho"
-            srcset=""
-          />
-          <span><strong>Innov</strong>Bank</span>
-        </a>
-        <div class="menu">
-          <div
-            class="hamburger btn btn-primary"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"
-          >
-            <img src="./assets/menu.svg" alt="" srcset="" />
-          </div>
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <a href="./pages/contato.html">Contato</a>
-              <a href="./pages/avaliacao.html">Avalie-nos</a>
-              <a class="destaque" href="./pages/login.html">Acesse sua conta</a>
-            </div>
-          </div>
-          <ul class="menu-options">
-            <li class="menu-services">
-              <a class="a-contato" href="./pages/contato.html">Contato</a>
-            </li>
-            <li class="menu-questions"><a class="a-contato" href="./pages/avaliacao.html">Avalie-nos</a></li>
-            <li>
-              <a
-                href="./pages/login.html"
-                class="btn-open-account-nav destaque"
-              >
-                Acesse sua conta
-              </a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./assets/logo.svg" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <link rel="stylesheet" href="./styles/index-media.css" />
+  <link rel="stylesheet" href="./styles/global.css" />
+  <title>InnovBank</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">
+        <img src="./assets/logo.svg" alt="logo do banco innovbank com uma construção branca em um circulo vermelho"
+          srcset="" />
+        <span><strong>Innov</strong>Bank</span>
+      </a>
+      <div class="menu">
+        <div class="hamburger btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">
+          <img src="./assets/menu.svg" alt="" srcset="" />
         </div>
-      </nav>
-    </header>
-    <div class="big-hero">
-      <h1>Inove com a <strong>InnovBank</strong></h1>
-      <p>
-        Nós somos mais do que um banco. Somos uma revolução financeira, trazendo
-        inovação, simplicidade e segurança para suas transações diárias.
-      </p>
-      <a href="./pages/cadastro.html" class="button btn-open-account"
-        >Abra sua conta</a
-      >
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <a href="./pages/contato.html">Contato</a>
+            <a href="./pages/avaliacao.html">Avalie-nos</a>
+            <a class="destaque" href="./pages/login.html">Acesse sua conta</a>
+          </div>
+        </div>
+        <ul class="menu-options">
+          <li class="menu-services">
+            <a class="a-contato" href="./pages/contato.html">Contato</a>
+          </li>
+          <li class="menu-questions"><a class="a-contato" href="./pages/avaliacao.html">Avalie-nos</a></li>
+          <li>
+            <a href="./pages/login.html" class="btn-open-account-nav destaque">
+              Acesse sua conta
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="big-hero">
+    <h1>Inove com a <strong>InnovBank</strong></h1>
+    <p>
+      Nós somos mais do que um banco. Somos uma revolução financeira, trazendo
+      inovação, simplicidade e segurança para suas transações diárias.
+    </p>
+    <a href="./pages/cadastro.html" class="button btn-open-account">Abra sua conta</a>
+  </div>
+  <section class="choose-innov">
+    <h2>Por que escolher a <strong>Innov</strong>Bank?</h2>
+    <div class="choose-container">
+      <div class="card" data-aos="fade-up">
+        <img src="./assets/img-300-01.png" alt="" />
+        <h3>Experiência digital incompáravel</h3>
+        <p>
+          Simplifique sua vida financeira. Faça transações e gerencie contas
+          com alguns toques no seu dispositivo.
+        </p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <img src="./assets/img-300-02.png" alt="" />
+        <h3>Segurança em primeiro lugar</h3>
+        <p>
+          Proteção garantida. Suas informações estão sempre seguras,
+          permitindo que você se concentre no que importa.
+        </p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <img src="./assets/img-300-03.png" alt="" />
+        <h3>Soluções personalizadas</h3>
+        <p>
+          Atendimento exclusivo. Nossa equipe o ajuda a encontrar as melhores
+          soluções financeiras para suas metas.
+        </p>
+      </div>
+      <div class="card" data-aos="fade-up">
+        <img src="./assets/img-300-04.png" alt="" />
+        <h3>Compromisso com a inovação</h3>
+        <p>
+          Sempre na frente. Novas tecnologias e serviços para acompanhar o
+          mundo financeiro em evolução.
+        </p>
+      </div>
     </div>
-    <section class="choose-innov">
-      <h2>Por que escolher a <strong>Innov</strong>Bank?</h2>
-      <div class="choose-container">
-        <div class="card" data-aos="fade-up">
-          <img src="./assets/img-300-01.png" alt="" />
-          <h3>Experiência digital incompáravel</h3>
-          <p>
-            Simplifique sua vida financeira. Faça transações e gerencie contas
-            com alguns toques no seu dispositivo.
-          </p>
+  </section>
+  <section class="know-innov">
+    <div class="know-container">
+      <h2>Conheça o <strong>InnovCard</strong></h2>
+      <div class="know-content">
+        <div class="image-content">
+          <img src="./assets/inovcard-300.png" alt="" srcset="" data-aos="fade-left" data-aos-duration="2000" />
         </div>
-        <div class="card" data-aos="fade-up">
-          <img src="./assets/img-300-02.png" alt="" />
-          <h3>Segurança em primeiro lugar</h3>
+        <div class="content-text">
           <p>
-            Proteção garantida. Suas informações estão sempre seguras,
-            permitindo que você se concentre no que importa.
-          </p>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="./assets/img-300-03.png" alt="" />
-          <h3>Soluções personalizadas</h3>
-          <p>
-            Atendimento exclusivo. Nossa equipe o ajuda a encontrar as melhores
-            soluções financeiras para suas metas.
-          </p>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="./assets/img-300-04.png" alt="" />
-          <h3>Compromisso com a inovação</h3>
-          <p>
-            Sempre na frente. Novas tecnologias e serviços para acompanhar o
-            mundo financeiro em evolução.
+            Com o cartão InnovCard, você tem o controle total das suas
+            finanças na palma da sua mão.
           </p>
         </div>
       </div>
-    </section>
-    <section class="know-innov">
-      <div class="know-container">
-        <h2>Conheça o <strong>InnovCard</strong></h2>
-        <div class="know-content">
-          <div class="image-content">
-            <img
-              src="./assets/inovcard-300.png"
-              alt=""
-              srcset=""
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
-          </div>
-          <div class="content-text">
-            <p>
-              Com o cartão InnovCard, você tem o controle total das suas
-              finanças na palma da sua mão.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div
-        class="d-flex align-items-center justify-content-center flex-wrap"
-        id="comments"
-      >
     </div>
-    </section>
-    <section class="subscribe-innov">
-      <div class="subscribe-container" data-aos="fade-up">
-        <h2>Peça sua conta e cartão de crédito do InnovBank</h2>
-        <form>
-          <input
-            type="text"
-            placeholder="Digite seu CPF"
-            pattern="[0-9]{11}"
-            required
-          />
-          <button
-            type="submit"
-            formaction="./pages/cadastro.html"
-            class="button btn-continue"
-          >
-            Continuar
-          </button>
-        </form>
-      </div>
-    </section>
+  </section>
+  <section>
+    <div class="d-flex align-items-center justify-content-center flex-wrap" id="comments">
+    </div>
+  </section>
+  <section class="subscribe-innov">
+    <div class="subscribe-container" data-aos="fade-up">
+      <h2>Peça sua conta e cartão de crédito do InnovBank</h2>
+      <form>
+        <input type="text" placeholder="Digite seu CPF" pattern="[0-9]{11}" id="cpfIndex" required />
+        <button type="submit" formaction="./pages/cadastro.html" class="button btn-continue">
+          Continuar
+        </button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-      <span>InnovBank &copy; 2023.</span>
-    </footer>
+  <footer>
+    <span>InnovBank &copy; 2023.</span>
+  </footer>
 
-    <script>
-      AOS.init();
-    </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/comments.js"></script>
-  </body>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./js/comments.js"></script>
+</body>
+
 </html>

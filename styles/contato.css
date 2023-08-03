@@ -90,7 +90,7 @@ button {
     margin-top: -1.1rem;
 }
 
-#textarea{
+#textarea {
     background-color: #00000000;
 }
 
@@ -113,4 +113,17 @@ button {
 
 footer div:first-child {
     border-right: 1px solid #fff;
+}
+
+.alerta {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.show {
+    display: block;
+    animation: fadeInOut 3s ease-out;
 }
