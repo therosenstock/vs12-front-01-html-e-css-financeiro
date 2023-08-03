@@ -39,8 +39,16 @@ function render(user) {
   const fatura = document.getElementById("fatura");
   const limiteUsado = document.getElementById("utilizado");
   const limiteDisponivel = document.getElementById("disponivel");
-  console.log(user);
+  const nomePerfil = document.getElementById("nomePerfil");
+  const cpfPerfil = document.getElementById("cpfPerfil");
+  const enderecoPerfil = document.getElementById("enderecoPerfil");
+  const emailPerfil = document.getElementById("emailPerfil");
+
   nomeConta.innerHTML = user.nome;
+  nomePerfil.innerHTML = "Nome: " + user.nome;
+  cpfPerfil.innerHTML = "CPF: " + user.cpf;
+  enderecoPerfil.innerHTML = `Endereço: ${user.endereco}, 3, ${user.cidadeuf}`;
+  emailPerfil.innerHTML = "E-mail: " + user.email;
   agenciaConta.innerHTML = user.agencia;
   contaConta.innerHTML = user.conta;
   agenciaContaMB.innerHTML = user.agencia;
