@@ -14,6 +14,7 @@
       "saldo": 2180,
       "limiteCartao": 9000,
       "fatura": 1700,
+      "limiteUtilizado": 7500,
       "transacoesDebito":[
       {
         "id": 1,
@@ -84,7 +85,8 @@
       "agencia": "0200",
       "conta": "82285",
       "saldo": 1500,
-      "limiteCartao": 9000,
+      "limiteCartao": 6000,
+      "limiteUtilizado": 5500,
       "fatura": 1700,
       "transacoesDebito":[
       {
@@ -136,7 +138,8 @@
       "agencia": "0300",
       "conta": "81115",
       "saldo": 2000,
-      "limiteCartao": 9000,
+      "limiteCartao": 4000,
+      "limiteUtilizado": 1500,
       "fatura": 1700,
       "transacoesDebito":[
         {

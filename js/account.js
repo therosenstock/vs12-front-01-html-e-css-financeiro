@@ -46,6 +46,7 @@ function render(user) {
   round = round.toFixed(2);
   round = round.replace(".", ",");
   saldo.innerHTML = `R$ ${round}`;
+
   renderTransacoes(user.transacoesDebito);
 }
 
