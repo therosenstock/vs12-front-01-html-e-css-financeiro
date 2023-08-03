@@ -1,5 +1,5 @@
 const params = new URLSearchParams(window.location.search);
-const id = parseInt(params.get("id")); // Convertemos o ID para um número inteiro
+const id = parseInt(params.get("id"));
 let icones = [];
 const btnSearch = document.getElementById("btn-search");
 const search = document.getElementById("search");

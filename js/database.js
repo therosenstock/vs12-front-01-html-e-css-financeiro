@@ -25,7 +25,8 @@ async function login(email, senha) {
       if (usuarioEncontrado) {
         window.location.href = `conta.html?id=${usuarioEncontrado.id}`;
       } else {
-        alert("Credenciais inválidas. Login falhou.");
+        resposta.style.color = "red";
+        resposta.innerHTML = "E-mail e/ou senha incorretos!";
       }
     })
     .catch((error) => {
