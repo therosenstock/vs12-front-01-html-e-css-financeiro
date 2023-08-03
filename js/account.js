@@ -182,5 +182,20 @@ async function searchTransaction(search) {
       console.log("Erro", error);
     });
 }
-
+function verificarSenha() {
+  const atual = document.getElementById("atual").value;
+  const nova = document.getElementById("nova").value;
+  const confirme = document.getElementById("confirme").value;
+  const resposta = document.getElementById("respostaSenha");
+  if (atual.length < 4) {
+    resposta.style.color = "red";
+    resposta.innerHTML = "Senha atual incorreta!";
+  } else if (nova == confirme) {
+    resposta.style.color = "green";
+    resposta.innerHTML = "Senha alterada com sucesso!";
+  } else {
+    resposta.style.color = "red";
+    resposta.innerHTML = "As senhas não conferem!";
+  }
+}
 load();

@@ -35,10 +35,16 @@
           </span>
         </div>
         <div class="account-menu">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#"
-              class="btn btn-outline-danger"></i>Perfil</a></button>
-          <button type="button"><a href="#" class="btn btn-outline-danger">Configurações</a></button>
-          <button type="button"><a href="../index.html" class="btn btn-outline-danger">Sair</a></button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <a href="#" class="btn btn-outline-danger">Perfil</a>
+          </button>
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <a href="#" class="btn btn-outline-danger">Configurações</a>
+          </button>
+
+          <button type="button">
+            <a href="../index.html" class="btn btn-outline-danger">Sair</a>
+          </button>
         </div>
       </div>
 
@@ -61,11 +67,12 @@
               <span><strong>Conta: </strong><span id="contaContaMB"></span> </span>
             </li>
             <li class="nav-item">
-              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="#"
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1"><a href="#"
                   class="btn btn-outline-danger">Perfil</a></button>
             </li>
             <li class="nav-item">
-              <button type="button"><a href="#" class="btn btn-outline-danger">Configurações</a></button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal2"><a href="#"
+                  class="btn btn-outline-danger">Configurações</a></button>
             </li>
             <li class="nav-item">
               <a href="../index.html" class="btn btn-outline-danger">Sair</a>
@@ -262,7 +269,7 @@
 
   </div>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -277,7 +284,42 @@
           <p><strong>Para alteração do seu cadastro, compareça em uma das agências InnovBank.</strong></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Configurações
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Alterar senha</p>
+            <div class="label-float">
+              <input type="password" id="atual" placeholder="Senha atual" required />
+              <label class="search-label">Senha atual</label>
+            </div>
+            <div class="label-float">
+              <input type="password" id="nova" placeholder="Senha nova" required />
+              <label class="search-label">Senha nova</label>
+            </div>
+            <div class="label-float">
+              <input type="password" id="confirme" placeholder="Confirme a senha nova" required />
+              <label class="search-label">Confirme a senha nova</label>
+            </div>
+            <p id="respostaSenha"></p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" onclick="verificarSenha()">Salvar</button>
 
         </div>
       </div>
