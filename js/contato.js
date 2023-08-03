@@ -32,8 +32,8 @@ form.addEventListener("submit", (event) => {
       return response.json();
     })
     .then((data) => {
-      console.log("Avaliação enviada com sucesso", data);
-      mostrarAlerta("Avaliação realizada com sucesso!");
+      console.log("Contato enviada com sucesso", data);
+      mostrarAlerta("Contato enviado com sucesso!");
     })
     .catch((error) => {
       console.error("Erro ao enviar a avaliação: ", error.message);
