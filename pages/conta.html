@@ -108,7 +108,7 @@
       </div>
       <div class="account-option">
         <div class="option-icon">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal4">
             <img src="../assets/ico-02.svg" alt="" srcset=""></button>
         </div>
         <span class="title-option">
@@ -135,7 +135,7 @@
       </div>
       <div class="account-option">
         <div class="option-icon">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal6">
             <img src="../assets/ico-05.svg" alt="" srcset="">
           </button>
         </div>
@@ -359,7 +359,42 @@
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" onclick="transferir()" class="btn btn-primary">Confirmar</button>
           <div id="alerta" class="alerta alert alert-primary" role="alert">
-            Avaliação realizado com sucesso!
+            Transação realizado com sucesso!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Boleto
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Dados Boleto</p>
+            <div class="label-float">
+              <input type="number" id="codigoBoleto" placeholder="Digite o codigo" required />
+              <label class="search-label">Digite o codigo</label>
+            </div>
+            <div class="label-float">
+              <input type="text" id="descricaoBoleto" placeholder="Descrição" required />
+              <label class="search-label">Descrição</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="valorBoleto" placeholder="Valor a pagar" required />
+              <label class="search-label">Valor a pagar</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" onclick="boleto()" class="btn btn-primary">Confirmar</button>
+          <div id="alerta" class="alerta alert alert-primary" role="alert">
+            Transação realizado com sucesso!
           </div>
         </div>
       </div>
@@ -377,27 +412,56 @@
           <form>
             <p>Chave pix</p>
             <div class="label-float">
-              <input type="number" id="cpf" placeholder="CPF" required />
+              <input type="number" class="chavePix" id="cpfPix" pattern="([0-9]{11})" maxlength="11" placeholder="CPF" required />
               <label class="search-label">CPF</label>
             </div>
             <div class="label-float">
-              <input type="number" id="celular" placeholder="Celular" required />
+              <input type="number" class="chavePix" id="celularPix" placeholder="Celular" required />
               <label class="search-label">Celular</label>
             </div>
             <div class="label-float">
-              <input type="number" id="aleatoria" placeholder="aleatoria" required />
+              <input type="number" class="chavePix" id="aleatoriaPix" placeholder="aleatoria" required />
               <label class="search-label">aleatoria</label>
             </div>
             <div class="label-float">
-              <input type="number" id="valor-tranferencia" placeholder="Valor a transferir" required />
+              <input type="number" id="pixTransferencia" placeholder="Valor a transferir" required />
               <label class="search-label">Valor a transferir</label>
             </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" >Confirmar</button>
-
+          <button type="button" onclick="pix()" class="btn btn-primary" >Confirmar</button>
+          <div id="alerta" class="alerta alert alert-primary" role="alert">
+            Transação realizado com sucesso!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ajuda
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="d-flex flex-column align-items-center justify-content-center p-0 ">
+            <p>Encontre nossos canais</p>
+            <div class="label-float p-0 ">
+              <p>central@innovbank.com</p>
+              <p>sac 08000 777 0987</p>
+              <p>ouvidoria 08000 777 0987</p>
+            </div>
+            <div class="label-float">
+              <a href="./contato.html">Nos envie uma mensagem</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
         </div>
       </div>
     </div>

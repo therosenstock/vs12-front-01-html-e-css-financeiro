@@ -217,11 +217,71 @@ function transferir(){
     limparTransferencia();
   }
 }
-
 function limparTransferencia(){
   document.getElementById("contaTransferencia").value = '';
   document.getElementById("agenciaTransferencia").value = '';
   document.getElementById("valorTransferencia").value = '';
+}
+
+function pix(){
+  const cpf = document.getElementById("cpfPix").value;
+  const celular = document.getElementById("celularPix").value;
+  const aleatoria = document.getElementById("aleatoriaPix").value
+  const pixTransferencia = document.getElementById('pixTransferencia').value;
+
+  if(!cpf.trim() || !celular.trim() || !aleatoria.trim() || pixTransferencia.trim()) {
+    mostrarAlerta("Preencha os campos");
+  }else{
+    mostrarAlerta("Transação realizada com sucesso!");
+    limparPix();
+  }
+}
+
+function limparPix(){
+  document.getElementById("cpfPix").value = '';
+  document.getElementById("celularPix").value = '';
+  document.getElementById("aleatoriaPix").value = '';
+  document.getElementById('pixTransferencia').value = '';
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const chavesPix = document.querySelectorAll('.chavePix');
+  
+  chavesPix.forEach(input => {
+      input.addEventListener('input', function() {
+          if (input.value.trim() !== '') {
+              chavesPix.forEach(otherInput => {
+                  if (otherInput !== input) {
+                      otherInput.disabled = true;
+                  }
+              });
+          } else {
+              chavesPix.forEach(otherInput => {
+                  otherInput.disabled = false;
+              });
+          }
+      });
+  });
+});
+
+function boleto(){
+  const codigo = document.getElementById('codigoBoleto').value;
+  const descricao = document.getElementById('descricaoBoleto').value;
+  const valor = document.getElementById('valorBoleto').value
+
+  if(!codigo.trim() || !descricao.trim() || !valor.trim()) {
+    mostrarAlerta("Preencha os campos");
+  }else{
+    mostrarAlerta("Transação realizada com sucesso!");
+    limparBoleto();
+  }
+
+}
+
+function limparBoleto(){
+  document.getElementById('codigoBoleto').value = '';
+  document.getElementById('descricaoBoleto').value = '';
+  document.getElementById('valorBoleto').value = '';
 }
 
 function mostrarAlerta(texto) {
