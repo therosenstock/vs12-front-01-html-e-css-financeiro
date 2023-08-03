@@ -203,89 +203,91 @@ function verificarSenha() {
 }
 load();
 
-
-
-function transferir(){
+function transferir() {
   const conta = document.getElementById("contaTransferencia").value;
   const agencia = document.getElementById("agenciaTransferencia").value;
   const valor = document.getElementById("valorTransferencia").value;
 
-  if(!conta.trim() || !agencia.trim() || !valor.trim()) {
+  if (!conta.trim() || !agencia.trim() || !valor.trim()) {
     mostrarAlerta("Preencha os campos");
-  }else{
+  } else {
     mostrarAlerta("Transação realizada com sucesso!");
     limparTransferencia();
   }
 }
-function limparTransferencia(){
-  document.getElementById("contaTransferencia").value = '';
-  document.getElementById("agenciaTransferencia").value = '';
-  document.getElementById("valorTransferencia").value = '';
+function limparTransferencia() {
+  document.getElementById("contaTransferencia").value = "";
+  document.getElementById("agenciaTransferencia").value = "";
+  document.getElementById("valorTransferencia").value = "";
 }
 
-function pix(){
+function pix() {
   const cpf = document.getElementById("cpfPix").value;
   const celular = document.getElementById("celularPix").value;
-  const aleatoria = document.getElementById("aleatoriaPix").value
-  const pixTransferencia = document.getElementById('pixTransferencia').value;
+  const aleatoria = document.getElementById("aleatoriaPix").value;
+  const pixTransferencia = document.getElementById("pixTransferencia").value;
+  const alerta3 = document.getElementById("alerta3");
 
-  if(!cpf.trim() || !celular.trim() || !aleatoria.trim() || pixTransferencia.trim()) {
-    mostrarAlerta("Preencha os campos");
-  }else{
-    mostrarAlerta("Transação realizada com sucesso!");
+  if (
+    (!cpf.trim() && !celular.trim() && !aleatoria.trim()) ||
+    !pixTransferencia.trim()
+  ) {
+    mostrarAlerta("Preencha os campos", alerta3);
+  } else {
+    mostrarAlerta("Transação realizada com sucesso!", alerta3);
     limparPix();
   }
 }
 
-function limparPix(){
-  document.getElementById("cpfPix").value = '';
-  document.getElementById("celularPix").value = '';
-  document.getElementById("aleatoriaPix").value = '';
-  document.getElementById('pixTransferencia').value = '';
+function limparPix() {
+  document.getElementById("cpfPix").value = "";
+  document.getElementById("celularPix").value = "";
+  document.getElementById("aleatoriaPix").value = "";
+  document.getElementById("pixTransferencia").value = "";
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  const chavesPix = document.querySelectorAll('.chavePix');
-  
-  chavesPix.forEach(input => {
-      input.addEventListener('input', function() {
-          if (input.value.trim() !== '') {
-              chavesPix.forEach(otherInput => {
-                  if (otherInput !== input) {
-                      otherInput.disabled = true;
-                  }
-              });
-          } else {
-              chavesPix.forEach(otherInput => {
-                  otherInput.disabled = false;
-              });
+document.addEventListener("DOMContentLoaded", function () {
+  const chavesPix = document.querySelectorAll(".chavePix");
+
+  chavesPix.forEach((input) => {
+    input.addEventListener("input", function () {
+      if (input.value.trim() !== "") {
+        chavesPix.forEach((otherInput) => {
+          if (otherInput !== input) {
+            otherInput.disabled = true;
           }
-      });
+        });
+      } else {
+        chavesPix.forEach((otherInput) => {
+          otherInput.disabled = false;
+        });
+      }
+    });
   });
 });
 
-function boleto(){
-  const codigo = document.getElementById('codigoBoleto').value;
-  const descricao = document.getElementById('descricaoBoleto').value;
-  const valor = document.getElementById('valorBoleto').value
-
-  if(!codigo.trim() || !descricao.trim() || !valor.trim()) {
-    mostrarAlerta("Preencha os campos");
-  }else{
-    mostrarAlerta("Transação realizada com sucesso!");
+function boleto() {
+  const codigo = document.getElementById("codigoBoleto").value;
+  const descricao = document.getElementById("descricaoBoleto").value;
+  const valor = document.getElementById("valorBoleto").value;
+  const alerta2 = document.getElementById("alerta2");
+  if (codigo == "" || descricao == "" || valor == "") {
+    console.log("entra no if");
+    mostrarAlerta("Preencha os campos", alerta2);
+  } else {
+    console.log("else da massa");
+    mostrarAlerta("Transação realizada com sucesso!", alerta2);
     limparBoleto();
   }
-
 }
 
-function limparBoleto(){
-  document.getElementById('codigoBoleto').value = '';
-  document.getElementById('descricaoBoleto').value = '';
-  document.getElementById('valorBoleto').value = '';
+function limparBoleto() {
+  document.getElementById("codigoBoleto").value = "";
+  document.getElementById("descricaoBoleto").value = "";
+  document.getElementById("valorBoleto").value = "";
 }
 
-function mostrarAlerta(texto) {
-  const alerta = document.getElementById("alerta");
+function mostrarAlerta(texto, alerta) {
   alerta.classList.add("show");
   alerta.innerText = texto;
 
