@@ -1,13 +1,13 @@
 function criarCardComentario(comentario) {
   const cardHTML = `
-          <div class="card m-5 " style="width: 14rem; height: 19rem">
+          <div class="card m-5 text" style="width: 14rem; height: 19rem">
             <div class="card-header">
               Avaliações dos clientes
             </div>
           
-            <div class="card-body">
-                <h5 class="card-title">${comentario.titulo}</h5>
-                <p class="card-text"><strong>${comentario.nome}</strong> - Avaliação: ${comentario.nota}</p>
+            <div class="card-body d-flex flex-column ">
+                <h5 class="card-title fw-bolder">${comentario.titulo}</h5>
+                <p class="card-text "><strong>${comentario.nome}</strong> - Avaliação: ${comentario.nota}</p>
                 <p class="card-text">${comentario.comentario}</p>
             </div>
           </div>

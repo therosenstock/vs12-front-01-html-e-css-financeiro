@@ -202,3 +202,34 @@ function verificarSenha() {
   }
 }
 load();
+
+
+
+function transferir(){
+  const conta = document.getElementById("contaTransferencia").value;
+  const agencia = document.getElementById("agenciaTransferencia").value;
+  const valor = document.getElementById("valorTransferencia").value;
+
+  if(!conta.trim() || !agencia.trim() || !valor.trim()) {
+    mostrarAlerta("Preencha os campos");
+  }else{
+    mostrarAlerta("Transação realizada com sucesso!");
+    limparTransferencia();
+  }
+}
+
+function limparTransferencia(){
+  document.getElementById("contaTransferencia").value = '';
+  document.getElementById("agenciaTransferencia").value = '';
+  document.getElementById("valorTransferencia").value = '';
+}
+
+function mostrarAlerta(texto) {
+  const alerta = document.getElementById("alerta");
+  alerta.classList.add("show");
+  alerta.innerText = texto;
+
+  setTimeout(() => {
+    alerta.classList.remove("show");
+  }, 2000);
+}

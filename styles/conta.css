@@ -294,3 +294,16 @@ input::placeholder {
   background-color: #BF0000;
   border-color: #BF0000;
 }
+
+.alerta {
+  display: none;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.show {
+  display: block;
+  animation: fadeInOut 3s ease-out;
+}

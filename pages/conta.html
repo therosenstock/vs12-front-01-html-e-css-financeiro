@@ -99,7 +99,7 @@
     </div>
     <div class="account-menu">
       <div class="account-option">
-        <div class="option-icon"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        <div class="option-icon"><button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
             <img src="../assets/ico-01.svg" alt="" srcset=""></button>
         </div>
         <span class="title-option">
@@ -117,7 +117,7 @@
       </div>
       <div class="account-option">
         <div class="option-icon">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal5">
             <img src="../assets/ico-03.svg" alt="" srcset=""></button>
         </div>
         <span class="title-option">
@@ -325,6 +325,78 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
           <button type="button" class="btn btn-primary" onclick="verificarSenha()">Salvar</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Transferir
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Dados bancarios</p>
+            <div class="label-float">
+              <input type="number" id="agenciaTransferencia" placeholder="Agencia" required />
+              <label class="search-label">Agencia</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="contaTransferencia" placeholder="Conta" required />
+              <label class="search-label">Conta</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="valorTransferencia" placeholder="Valor a transferir" required />
+              <label class="search-label">Valor a transferir</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" onclick="transferir()" class="btn btn-primary">Confirmar</button>
+          <div id="alerta" class="alerta alert alert-primary" role="alert">
+            Avaliação realizado com sucesso!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Pix
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Chave pix</p>
+            <div class="label-float">
+              <input type="number" id="cpf" placeholder="CPF" required />
+              <label class="search-label">CPF</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="celular" placeholder="Celular" required />
+              <label class="search-label">Celular</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="aleatoria" placeholder="aleatoria" required />
+              <label class="search-label">aleatoria</label>
+            </div>
+            <div class="label-float">
+              <input type="number" id="valor-tranferencia" placeholder="Valor a transferir" required />
+              <label class="search-label">Valor a transferir</label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary" >Confirmar</button>
 
         </div>
       </div>

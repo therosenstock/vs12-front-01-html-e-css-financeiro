@@ -6,7 +6,7 @@ function redirecionarParaLogin(){
 
 function obterEmail(){
     const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('valor'); // Corrigido o nome do parâmetro para 'valor'
+    return urlParams.get('valor');
 }
 
 const valorEmail = obterEmail();

@@ -304,3 +304,8 @@ a:hover {
     text-decoration: none;
     color: #fff;
 }
+
+.card-header{
+    background-color: #E90000;
+    color: #fff;
+}
