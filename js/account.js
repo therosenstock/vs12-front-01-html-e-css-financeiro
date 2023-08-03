@@ -1,29 +1,33 @@
 const params = new URLSearchParams(window.location.search);
 const id = parseInt(params.get("id")); // Convertemos o ID para um número inteiro
 let icones = [];
+const btnSearch = document.getElementById("btn-search");
+const search = document.getElementById("search");
 
 const url = `https://my-json-server.typicode.com/therosenstock/vs12-front-01-html-e-css-financeiro/users/${id}`;
 
-fetch(url, {
-  method: "GET",
-  headers: {
-    "Content-Type": "application/json",
-  },
-})
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    }
-    throw new Error("Erro ao obter os usuários");
+async function load() {
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
   })
-  .then((user) => {
-    if (user) {
-      render(user);
-    }
-  })
-  .catch((error) => {
-    console.log("Erro", error);
-  });
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error("Erro ao obter os usuários");
+    })
+    .then((user) => {
+      if (user) {
+        render(user);
+      }
+    })
+    .catch((error) => {
+      console.log("Erro", error);
+    });
+}
 
 function render(user) {
   const nomeConta = document.getElementById("nomeConta");
@@ -121,3 +125,40 @@ async function renderTipo(tipo) {
       console.log("Erro", error);
     });
 }
+
+search.addEventListener("input", () => {
+  if (search.value === "") {
+    load();
+  } else {
+    searchTransaction(search.value);
+  }
+});
+async function searchTransaction(search) {
+  fetch(url, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      }
+      throw new Error("Erro ao obter os usuários");
+    })
+    .then((users) => {
+      console.log(users);
+      const transacaoEncontrada = users.transacoesDebito.filter(
+        (user) => user.destino === search
+      );
+      console.log(transacaoEncontrada);
+      if (transacaoEncontrada) {
+        renderTransacoes(transacaoEncontrada);
+      }
+    })
+    .catch((error) => {
+      console.log("Erro", error);
+    });
+}
+
+load();

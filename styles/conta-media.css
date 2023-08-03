@@ -10,7 +10,8 @@
   .links-wrapper {
     display: none;
   }
-  .account-menu{
+
+  .account-menu {
     justify-content: space-around;
     padding: 0.5rem;
   }
@@ -24,10 +25,20 @@
   .links-wrapper {
     display: none;
   }
-  .account-menu{
+
+  .account-menu {
     justify-content: space-around;
     gap: 1rem;
     padding: 0.5rem;
+  }
+
+  .label-float label {
+    font-size: 1.0rem;
+  }
+
+  .label-float input {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -39,11 +50,19 @@
   .links-wrapper {
     display: none;
   }
-.account-menu{
-  justify-content: space-around;
-  gap: 2rem;
-  padding: 1rem;
-}
+
+  .account-menu {
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -55,9 +74,15 @@
     display: flex;
   }
 
-  .account-menu{
+  .account-menu {
     justify-content: flex-start;
     gap: 2rem;
   }
-}
 
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: 30%;
+  }
+}
