@@ -26,6 +26,7 @@ async function login(email, senha) {
         window.location.href = `conta.html?id=${usuarioEncontrado.id}`;
       } else {
         resposta.style.color = "red";
+        resposta.style.paddingBottom = "1rem";
         resposta.innerHTML = "E-mail e/ou senha incorretos!";
       }
     })
